@@ -1,0 +1,40 @@
+section{
+    &.footer-info{
+        display: flex;
+        flex-direction: column;
+        background-color: $footer__info--bgcolor;
+        color: $base--color;
+        font-family: $base--fontface;
+        figure{
+            margin: 0;
+        }
+        h3{
+            text-transform: uppercase;
+        };
+        div a{
+            display: inline-block;
+            position: relative;
+            background-color: #212330;
+            color: $base--color;
+            width: 100px;
+            height: 55px;
+            padding-top: .25 * $base--fontsize;
+            text: {
+                decoration: none;
+                align: center;
+            }
+            font: {
+                weight: lighter;
+                size: 2 * $base--fontsize;
+            };
+            @include get-footer-icons-hover-bg(facebook);
+            @include get-footer-icons-hover-bg(linkedin);
+            @include get-footer-icons-hover-bg(twitter);
+            @include get-footer-icons-hover-bg(instagram);
+            span{
+                position: relative;
+                top: $base--fontsize;
+            }
+        };
+    }
+}

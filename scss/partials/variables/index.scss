@@ -1,0 +1,16 @@
+//base
+$base--fontface: Poppins,sans-serif;
+$base--color: #fff;
+$base--fontsize: 20px;
+
+//footer
+$footer__info--bgcolor: #323544;
+$footer__icons--bgcolor: #212330;
+$footer__icons--hover--bgcolors: (
+    facebook: #3b5998,
+    instagram: #d93175,
+    linkedin: #0077b5,
+    // ldn: lighten(fb, 10%),
+    twitter: #00aced,
+    // twt: lighten(fb, 30%),
+);

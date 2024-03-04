@@ -1,0 +1,116 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "icomoon";
+  src: url("../assets/icon-fonts/facebook/icomoon.eot?f36ori");
+  src: url("../assets/icon-fonts/facebook/icomoon.eot?f36ori#iefix") format("embedded-opentype"), url("../assets/icon-fonts/facebook/icomoon.ttf?f36ori") format("truetype"), url("../assets/icon-fonts/facebook/icomoon.woff?f36ori") format("woff"), url("../assets/icon-fonts/facebook/icomoon.svg?f36ori#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\ea90";
+}
+
+.icon-instagram:before {
+  content: "\ea92";
+}
+
+.icon-twitter:before {
+  content: "\ea96";
+}
+
+.icon-linkedin:before {
+  content: "\eac9";
+}
+
+section.footer-info {
+  display: flex;
+  flex-direction: column;
+  background-color: #323544;
+  color: #fff;
+  font-family: Poppins, sans-serif;
+}
+section.footer-info figure {
+  margin: 0;
+}
+section.footer-info h3 {
+  text-transform: uppercase;
+}
+section.footer-info div a {
+  display: inline-block;
+  position: relative;
+  background-color: #212330;
+  color: #fff;
+  width: 100px;
+  height: 55px;
+  padding-top: 5px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 40px;
+}
+section.footer-info div a span.icon-facebook:hover {
+  background-color: #3b5998;
+}
+section.footer-info div a span.icon-linkedin:hover {
+  background-color: #0077b5;
+}
+section.footer-info div a span.icon-twitter:hover {
+  background-color: #00aced;
+}
+section.footer-info div a span.icon-instagram:hover {
+  background-color: #d93175;
+}
+section.footer-info div a span {
+  position: relative;
+  top: 20px;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("../assets/web-fonts/Poppins.scss");
+}
+:root {
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+#main-footer {
+  background: #212330;
+  color: #fff;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  line-height: 1.375rem;
+  font-stretch: ultra-expanded;
+  letter-spacing: 0.025rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 769px) {
+  #main-footer {
+    flex-direction: row;
+  }
+  #main-footer p:nth-child(2)::before {
+    content: " ";
+  }
+  #main-footer p:last-child::before {
+    content: " -  ";
+  }
+}
+
+/*# sourceMappingURL=application.css.map */

@@ -1,0 +1,8 @@
+// footer social media
+@mixin get-footer-icons-hover-bg($company-name){
+    span.icon-#{$company-name}{
+        &:hover{
+            background-color: map-get($footer__icons--hover--bgcolors, "#{$company-name}");
+        }
+    };
+}
