@@ -37,20 +37,28 @@
   content: "\eac9";
 }
 
-section.footer-info {
+section#footer-info {
   display: flex;
-  flex-direction: column;
   background-color: #323544;
   color: #fff;
   font-family: Poppins, sans-serif;
 }
-section.footer-info figure {
+@media (max-width: 1020px) {
+  section#footer-info {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+section#footer-info figure {
   margin: 0;
 }
-section.footer-info h3 {
+section#footer-info h3 {
   text-transform: uppercase;
 }
-section.footer-info div a {
+section#footer-info div#social-links-container {
+  margin: 1rem;
+}
+section#footer-info div#social-links a {
   display: inline-block;
   position: relative;
   background-color: #212330;
@@ -63,21 +71,38 @@ section.footer-info div a {
   font-weight: lighter;
   font-size: 40px;
 }
-section.footer-info div a span.icon-facebook:hover {
+section#footer-info div#social-links a span.icon-facebook:hover {
   background-color: #3b5998;
 }
-section.footer-info div a span.icon-linkedin:hover {
+section#footer-info div#social-links a span.icon-linkedin:hover {
   background-color: #0077b5;
 }
-section.footer-info div a span.icon-twitter:hover {
+section#footer-info div#social-links a span.icon-twitter:hover {
   background-color: #00aced;
 }
-section.footer-info div a span.icon-instagram:hover {
+section#footer-info div#social-links a span.icon-instagram:hover {
   background-color: #d93175;
 }
-section.footer-info div a span {
+section#footer-info div#social-links a span {
   position: relative;
   top: 20px;
+}
+@media (min-width: 768px) {
+  section#footer-info div#footer-menu-container {
+    display: flex;
+    flex-shrink: 0;
+  }
+}
+section#footer-info div#footer-menu-container div.footer-menu {
+  margin: 1rem;
+}
+section#footer-info div#footer-menu-container div.footer-menu ul {
+  list-style-type: none;
+  list-style-position: outside;
+  padding-left: 0;
+}
+section#footer-info div#footer-menu-container div.footer-menu ul li {
+  line-height: 150%;
 }
 
 @font-face {

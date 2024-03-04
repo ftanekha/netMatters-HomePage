@@ -1,17 +1,26 @@
 section{
-    &.footer-info{
+    &#footer-info{
         display: flex;
-        flex-direction: column;
         background-color: $footer__info--bgcolor;
         color: $base--color;
         font-family: $base--fontface;
+        @media (max-width: 1020px){
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
         figure{
             margin: 0;
         }
         h3{
             text-transform: uppercase;
         };
-        div a{
+
+        // social links//
+        div#social-links-container{
+            margin: 1rem;
+        }
+        div#social-links a{
             display: inline-block;
             position: relative;
             background-color: #212330;
@@ -36,5 +45,23 @@ section{
                 top: $base--fontsize;
             }
         };
+        //footer-menu//
+        div#footer-menu-container{
+            @media (min-width: 768px){
+                display: flex;
+                flex-shrink: 0;
+            }
+            div.footer-menu{
+                margin: 1rem;
+                ul{
+                    list-style-type: none;
+                    list-style-position: outside;
+                    padding-left: 0;
+                    li{
+                        line-height: 150%;
+                    }
+                };
+            }
+        }
     }
 }
