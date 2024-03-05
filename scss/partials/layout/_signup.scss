@@ -1,5 +1,6 @@
 section#signup{
     background-color: $signup__form--bgcolor;
+    color: $signup__form--color;
     padding: 4rem 0;
     div#signup-form-container{
         width: 90%;
@@ -16,6 +17,12 @@ section#signup{
                         content: " \002A";
                         color: $asterisk--color;
                     }
+                };
+                input{
+                    border: none;
+                    &:focus{    
+                        box-shadow: inset 0 0 5px #5bc0de;
+                    }
                 }
             }
             @media (min-width: 1020px){
@@ -29,18 +36,49 @@ section#signup{
         }
     }
     h3{
-        font: {
-            size: 2rem;
-            weight: 400;
-        }
+        font-size: 2.5rem;
+        font-weight: 400;
     }
-    label{
+    label, p{
         display: block;
+        font-size: 1.25rem;
         font-weight: 600;
     }
     input{
         width: 100%;
         height: 47px;
         padding: 5px 15px;
+    }
+    //signup footer
+    footer#signup-footer{
+        width: 90%;
+        margin: 1rem auto;
+        div#signup-checkbox{
+            float: left;
+            @include signup-checkbox;
+            text-align: center;
+            //temporary effect in lieu of click event
+            &:hover{
+                background-color: $signup__form--color;
+                color: $base--color;
+                font-weight: bold;
+                //checkmark
+                &:after{
+                    content: "\2714";
+                }
+            }
+        }
+        p{
+            margin-left: 4rem;
+            a{
+                &:link{
+                    text-decoration: underline;
+                    color: #000;
+                }
+                &:visited{
+                    color: #000;
+                }
+            }
+        }
     }
 }

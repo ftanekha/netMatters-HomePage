@@ -5,7 +5,11 @@ $base--fontsize: 18px;
 
 //signup form
 $signup__form--bgcolor: #ddd;
+$signup__form--color: #333645;
 $asterisk--color: #d24d57;
+$signup__checkbox--size: 2rem;
+$signup__checkbox--border: 3px solid $signup__form--color;
+$signup__checkbox--border-radius: 3px;
 //footer
 $footer__info--bgcolor: #323544;
 $footer__icons--bgcolor: #212330;

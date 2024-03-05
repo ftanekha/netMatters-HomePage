@@ -1,6 +1,13 @@
 // footer social media
-@mixin get-footer-icons-hover-bg($company-name){
+@mixin footer-icons-hover-bg($company-name){
     &.#{$company-name}:hover{
         background-color: map-get($footer__icons--hover--bgcolors, "#{$company-name}");
     }
+}
+
+@mixin signup-checkbox{
+    width: $signup__checkbox--size;
+    height: $signup__checkbox--size;
+    border: $signup__checkbox--border;
+    border-radius: $signup__checkbox--border-radius;
 }

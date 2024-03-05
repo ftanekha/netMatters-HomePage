@@ -38,15 +38,15 @@ section{
                 align: center;
             }
             font: {
-                size: 2 * $base--fontsize;
+                size: 2 * 1rem;
             };
-            @include get-footer-icons-hover-bg(facebook);
-            @include get-footer-icons-hover-bg(linkedin);
-            @include get-footer-icons-hover-bg(twitter);
-            @include get-footer-icons-hover-bg(instagram);
+            @include footer-icons-hover-bg(facebook);
+            @include footer-icons-hover-bg(linkedin);
+            @include footer-icons-hover-bg(twitter);
+            @include footer-icons-hover-bg(instagram);
             span{
                 position: relative;
-                top: $base--fontsize;
+                top: 1rem;
             }
         };
 

@@ -6,7 +6,7 @@
 :root{
     box-sizing: border-box;
     font-family: $base--fontface;
-    font-size: $base--fontsize;
+    font-size: 1rem;
     background-color: $footer__info--bgcolor;
 }
 
@@ -23,7 +23,7 @@ main{
 }
 
 // main footer
-footer{
+footer#main-footer-container{
     background: $footer__icons--bgcolor;
     #main-footer{
         background: $footer__icons--bgcolor;
