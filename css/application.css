@@ -38,8 +38,9 @@
 }
 
 section#footer-info {
-  width: 80%;
-  margin: auto;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 4rem;
   display: flex;
   color: #fff;
   font-family: Poppins, sans-serif;
@@ -115,6 +116,49 @@ section#footer-info div#footer-menu-container div.footer-menu ul li a:link {
 }
 section#footer-info div#footer-menu-container div.footer-menu ul li a:hover {
   text-decoration: underline;
+}
+
+section#signup {
+  background-color: #ddd;
+  padding: 4rem 0;
+}
+section#signup div#signup-form-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+section#signup div#signup-form-container div#signup-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+section#signup div#signup-form-container div#signup-form div.signup-form label:after {
+  content: " *";
+  color: #d24d57;
+}
+@media (min-width: 1020px) {
+  section#signup div#signup-form-container div#signup-form {
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 4rem;
+  }
+  section#signup div#signup-form-container div#signup-form div.signup-form {
+    width: 50%;
+  }
+}
+section#signup h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+section#signup label {
+  display: block;
+  font-weight: 600;
+}
+section#signup input {
+  width: 100%;
+  height: 47px;
+  padding: 5px 15px;
 }
 
 /* devanagari */
@@ -605,37 +649,46 @@ section#footer-info div#footer-menu-container div.footer-menu ul li a:hover {
 }
 :root {
   box-sizing: border-box;
+  font-family: Poppins, sans-serif;
   font-size: 18px;
   background-color: #323544;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
 }
 
 footer {
   background: #212330;
 }
-
-#main-footer {
+footer #main-footer {
+  background: #212330;
   width: 80%;
-  margin: auto;
+  margin: 0 auto;
   color: #fff;
-  font-family: Poppins, sans-serif;
   line-height: 1.375rem;
   font-stretch: ultra-expanded;
   letter-spacing: 0.025rem;
   display: flex;
   flex-direction: column;
 }
-
 @media (min-width: 769px) {
-  #main-footer {
+  footer #main-footer {
     flex-direction: row;
   }
-  #main-footer p:nth-child(2)::before {
+  footer #main-footer p:nth-child(2)::before {
     content: " ";
   }
-  #main-footer p:last-child::before {
+  footer #main-footer p:last-child::before {
     content: " -  ";
   }
 }
->>>>>>> footer
 
 /*# sourceMappingURL=application.css.map */

@@ -1,7 +1,9 @@
 section{
     &#footer-info{
-        width: 80%;
-        margin: auto;
+        width: 90%;
+        margin: 0 auto;
+        //keep the footer at the bottom
+        padding: 0 4rem;
         display: flex;
         color: $base--color;
         font-family: $base--fontface;
