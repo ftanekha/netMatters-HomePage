@@ -1,9 +1,11 @@
 section{
     &#footer-info{
+        width: 80%;
+        margin: auto;
         display: flex;
-        background-color: $footer__info--bgcolor;
         color: $base--color;
         font-family: $base--fontface;
+        font-weight: normal;
         @media (max-width: 1020px){
             flex-wrap: wrap;
             justify-content: flex-start;
@@ -16,24 +18,24 @@ section{
             text-transform: uppercase;
         };
 
-        // social links//
-        div#social-links-container{
-            margin: 1rem;
+       //social media links
+        div#social-links{
+            display: flex;
+            column-gap: .6rem;
         }
         div#social-links a{
             display: inline-block;
             position: relative;
             background-color: #212330;
             color: $base--color;
-            width: 100px;
-            height: 55px;
-            padding-top: .25 * $base--fontsize;
+            width: 20%;
+            height: 4rem;
+            padding: 1.5rem auto;
             text: {
                 decoration: none;
                 align: center;
             }
             font: {
-                weight: lighter;
                 size: 2 * $base--fontsize;
             };
             @include get-footer-icons-hover-bg(facebook);
@@ -45,20 +47,34 @@ section{
                 top: $base--fontsize;
             }
         };
-        //footer-menu//
+
+        //footer-menu
         div#footer-menu-container{
-            @media (min-width: 768px){
+            // background-color: gray;
+            @media (min-width:1020px){
                 display: flex;
-                flex-shrink: 0;
+                flex-grow: 1;
+                justify-content: space-around;
             }
             div.footer-menu{
-                margin: 1rem;
+                h4{
+                    white-space: nowrap;
+                }
                 ul{
                     list-style-type: none;
                     list-style-position: outside;
                     padding-left: 0;
                     li{
                         line-height: 150%;
+                        a{
+                            text-decoration: none;
+                            &:link{
+                                color: $base--color;
+                            }
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
                     }
                 };
             }
