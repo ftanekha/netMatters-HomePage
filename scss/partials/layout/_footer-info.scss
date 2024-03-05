@@ -1,0 +1,83 @@
+section{
+    &#footer-info{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        color: $base--color;
+        font-family: $base--fontface;
+        font-weight: normal;
+        @media (max-width: 1020px){
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        figure{
+            margin: 0;
+        }
+        h3{
+            text-transform: uppercase;
+        };
+
+       //social media links
+        div#social-links{
+            display: flex;
+            column-gap: .6rem;
+        }
+        div#social-links a{
+            display: inline-block;
+            position: relative;
+            background-color: #212330;
+            color: $base--color;
+            width: 20%;
+            height: 4rem;
+            padding: 1.5rem auto;
+            text: {
+                decoration: none;
+                align: center;
+            }
+            font: {
+                size: 2 * $base--fontsize;
+            };
+            @include get-footer-icons-hover-bg(facebook);
+            @include get-footer-icons-hover-bg(linkedin);
+            @include get-footer-icons-hover-bg(twitter);
+            @include get-footer-icons-hover-bg(instagram);
+            span{
+                position: relative;
+                top: $base--fontsize;
+            }
+        };
+
+        //footer-menu
+        div#footer-menu-container{
+            // background-color: gray;
+            @media (min-width:1020px){
+                display: flex;
+                flex-grow: 1;
+                justify-content: space-around;
+            }
+            div.footer-menu{
+                h4{
+                    white-space: nowrap;
+                }
+                ul{
+                    list-style-type: none;
+                    list-style-position: outside;
+                    padding-left: 0;
+                    li{
+                        line-height: 150%;
+                        a{
+                            text-decoration: none;
+                            &:link{
+                                color: $base--color;
+                            }
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                };
+            }
+        }
+    }
+}
