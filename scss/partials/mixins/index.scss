@@ -1,3 +1,23 @@
+//buttons
+@mixin link-button(
+    $width: 6rem, $height: 3rem, $bg-color: $bg--primary, 
+    $color: $base--color, $border-rad: $border--base-radius
+){
+    text-decoration: none;
+    width: $width;
+    height: $height;
+    background-color: $bg-color;
+    color: $color;
+    border: $border--base;
+    border-radius: $border-rad;
+}
+//signup faux checkbox
+@mixin signup-checkbox{
+    width: $signup__checkbox--size;
+    height: $signup__checkbox--size;
+    border: $signup__checkbox--border;
+    border-radius: $border--base-radius;
+}
 // footer social media
 @mixin footer-icons-hover-bg($company-name){
     &.#{$company-name}:hover{
@@ -5,9 +25,3 @@
     }
 }
 
-@mixin signup-checkbox{
-    width: $signup__checkbox--size;
-    height: $signup__checkbox--size;
-    border: $signup__checkbox--border;
-    border-radius: $signup__checkbox--border-radius;
-}

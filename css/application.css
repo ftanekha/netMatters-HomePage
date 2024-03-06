@@ -37,6 +37,195 @@
   content: "\eac9";
 }
 
+section#scion-scheme-application {
+  background-color: #fff;
+}
+section#scion-scheme-application div#scion-scheme-application-container {
+  width: 90%;
+  margin: 0 auto;
+}
+section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry {
+  background-color: #e6e7e9;
+  border-radius: 10px;
+  padding: 30px;
+}
+section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry div#enquiry-form div.enquiry-form {
+  margin-bottom: 1rem;
+}
+section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry div#enquiry-form div.enquiry-form label {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry div#enquiry-form div.enquiry-form label:after {
+  content: " *";
+  color: #d24d57;
+}
+section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry div#enquiry-form div.enquiry-form input {
+  border: none;
+  width: 90%;
+  margin: auto;
+  height: 47px;
+  padding: 5px 15px;
+}
+section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry div#enquiry-form div.enquiry-form input:focus {
+  box-shadow: inset 0 0 5px #5bc0de;
+}
+section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry div#enquiry-form div.enquiry-form textarea {
+  width: 510px;
+  height: 209px;
+  padding: 5px 15px;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  color: #555;
+  font-size: 1rem;
+}
+@media (min-width: 1020px) {
+  section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry div#enquiry-form {
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 4rem;
+  }
+  section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry div#enquiry-form div.enquiry-form {
+    width: 50%;
+  }
+}
+section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry footer#bootcamp-enquiry-footer {
+  width: 90%;
+  margin: 1rem 0;
+}
+section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry footer#bootcamp-enquiry-footer div.signup-checkbox {
+  float: left;
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid #333645;
+  border-radius: 3px;
+  text-align: center;
+}
+section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry footer#bootcamp-enquiry-footer div.signup-checkbox:hover {
+  background-color: #333645;
+  color: #fff;
+  font-weight: bold;
+}
+section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry footer#bootcamp-enquiry-footer div.signup-checkbox:hover:after {
+  content: "✔";
+}
+section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry footer#bootcamp-enquiry-footer p {
+  margin-left: 4rem;
+}
+section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry footer#bootcamp-enquiry-footer p, section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry footer#bootcamp-enquiry-footer small {
+  font-weight: 600;
+  color: #333645;
+}
+section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry footer#bootcamp-enquiry-footer a:link {
+  text-decoration: underline;
+  color: #000;
+}
+section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry footer#bootcamp-enquiry-footer a:visited {
+  color: #000;
+}
+section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry footer#bootcamp-enquiry-footer div#enquiry-footer-info {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry footer#bootcamp-enquiry-footer div#enquiry-footer-info [type=submit] {
+  text-decoration: none;
+  width: 10rem;
+  height: 3rem;
+  background-color: #333645;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry footer#bootcamp-enquiry-footer div#enquiry-footer-info span::before {
+  content: "*";
+  color: #d24d57;
+}
+
+section#signup {
+  background-color: #ddd;
+  color: #333645;
+  padding: 4rem 0;
+}
+section#signup div#signup-form-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+section#signup div#signup-form-container div#signup-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+section#signup div#signup-form-container div#signup-form div.signup-form label:after {
+  content: "*";
+  color: #d24d57;
+}
+section#signup div#signup-form-container div#signup-form div.signup-form input {
+  border: none;
+  width: 100%;
+  height: 47px;
+  padding: 5px 15px;
+}
+section#signup div#signup-form-container div#signup-form div.signup-form input:focus {
+  box-shadow: inset 0 0 5px #5bc0de;
+}
+@media (min-width: 1020px) {
+  section#signup div#signup-form-container div#signup-form {
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 4rem;
+  }
+  section#signup div#signup-form-container div#signup-form div.signup-form {
+    width: 50%;
+  }
+}
+section#signup h3 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+section#signup label, section#signup p {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+}
+section#signup footer#signup-footer {
+  width: 90%;
+  margin: 1rem auto;
+}
+section#signup footer#signup-footer div.signup-checkbox {
+  float: left;
+  width: 2rem;
+  height: 2rem;
+  border: 3px solid #333645;
+  border-radius: 3px;
+  text-align: center;
+}
+section#signup footer#signup-footer div.signup-checkbox:hover {
+  background-color: #333645;
+  color: #fff;
+  font-weight: bold;
+}
+section#signup footer#signup-footer div.signup-checkbox:hover:after {
+  content: "✔";
+}
+section#signup footer#signup-footer p {
+  margin-left: 4rem;
+}
+section#signup footer#signup-footer p a:link {
+  text-decoration: underline;
+  color: #000;
+}
+section#signup footer#signup-footer p a:visited {
+  color: #000;
+}
+
 section#footer-info {
   width: 90%;
   margin: 0 auto;
@@ -116,87 +305,6 @@ section#footer-info div#footer-menu-container div.footer-menu ul li a:link {
 }
 section#footer-info div#footer-menu-container div.footer-menu ul li a:hover {
   text-decoration: underline;
-}
-
-section#signup {
-  background-color: #ddd;
-  color: #333645;
-  padding: 4rem 0;
-}
-section#signup div#signup-form-container {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-}
-section#signup div#signup-form-container div#signup-form {
-  display: flex;
-  flex-direction: column;
-  row-gap: 1rem;
-}
-section#signup div#signup-form-container div#signup-form div.signup-form label:after {
-  content: " *";
-  color: #d24d57;
-}
-section#signup div#signup-form-container div#signup-form div.signup-form input {
-  border: none;
-}
-section#signup div#signup-form-container div#signup-form div.signup-form input:focus {
-  box-shadow: inset 0 0 5px #5bc0de;
-}
-@media (min-width: 1020px) {
-  section#signup div#signup-form-container div#signup-form {
-    flex-direction: row;
-    justify-content: space-between;
-    column-gap: 4rem;
-  }
-  section#signup div#signup-form-container div#signup-form div.signup-form {
-    width: 50%;
-  }
-}
-section#signup h3 {
-  font-size: 2.5rem;
-  font-weight: 400;
-}
-section#signup label, section#signup p {
-  display: block;
-  font-size: 1.25rem;
-  font-weight: 600;
-}
-section#signup input {
-  width: 100%;
-  height: 47px;
-  padding: 5px 15px;
-}
-section#signup footer#signup-footer {
-  width: 90%;
-  margin: 1rem auto;
-}
-section#signup footer#signup-footer div#signup-checkbox {
-  float: left;
-  width: 2rem;
-  height: 2rem;
-  border: 3px solid #333645;
-  border-radius: 3px;
-  text-align: center;
-}
-section#signup footer#signup-footer div#signup-checkbox:hover {
-  background-color: #333645;
-  color: #fff;
-  font-weight: bold;
-}
-section#signup footer#signup-footer div#signup-checkbox:hover:after {
-  content: "✔";
-}
-section#signup footer#signup-footer p {
-  margin-left: 4rem;
-}
-section#signup footer#signup-footer p a:link {
-  text-decoration: underline;
-  color: #000;
-}
-section#signup footer#signup-footer p a:visited {
-  color: #000;
 }
 
 /* devanagari */
@@ -687,9 +795,10 @@ section#signup footer#signup-footer p a:visited {
 }
 :root {
   box-sizing: border-box;
-  font-family: Poppins, sans-serif;
-  font-size: 1rem;
   background-color: #323544;
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.4px;
 }
 
 body {
@@ -708,7 +817,7 @@ footer#main-footer-container {
 }
 footer#main-footer-container #main-footer {
   background: #212330;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   color: #fff;
   line-height: 1.375rem;

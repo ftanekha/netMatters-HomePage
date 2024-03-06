@@ -2,14 +2,19 @@
 $base--fontface: Poppins,sans-serif;
 $base--color: #fff;
 $base--fontsize: 18px;
-
+$bg--primary: #4183d7;
+$bg--sombre: #999aa2;
+$bg--dark: #333645;
+$border--base: 1px solid transparent;
+$border--base-radius: 3px;
 //signup form
 $signup__form--bgcolor: #ddd;
-$signup__form--color: #333645;
+$signup__form--color: $bg--dark;
 $asterisk--color: #d24d57;
 $signup__checkbox--size: 2rem;
 $signup__checkbox--border: 3px solid $signup__form--color;
-$signup__checkbox--border-radius: 3px;
+$checkmark: "\2714";
+$asterisk: "\002A";
 //footer
 $footer__info--bgcolor: #323544;
 $footer__icons--bgcolor: #212330;
@@ -17,7 +22,5 @@ $footer__icons--hover--bgcolors: (
     facebook: #3b5998,
     instagram: #d93175,
     linkedin: #0077b5,
-    // ldn: lighten(fb, 10%),
     twitter: #00aced,
-    // twt: lighten(fb, 30%),
 );
