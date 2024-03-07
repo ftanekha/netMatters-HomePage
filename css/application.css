@@ -1,8 +1,67 @@
 @charset "UTF-8";
 @font-face {
   font-family: "icomoon";
-  src: url("../assets/icon-fonts/facebook/icomoon.eot?f36ori");
-  src: url("../assets/icon-fonts/facebook/icomoon.eot?f36ori#iefix") format("embedded-opentype"), url("../assets/icon-fonts/facebook/icomoon.ttf?f36ori") format("truetype"), url("../assets/icon-fonts/facebook/icomoon.woff?f36ori") format("woff"), url("../assets/icon-fonts/facebook/icomoon.svg?f36ori#icomoon") format("svg");
+  src: url("../../assets/icon-fonts/course-features/fonts/icomoon.eot?fa13rq");
+  src: url("../../assets/icon-fonts/course-features/fonts/icomoon.eot?fa13rq#iefix") format("embedded-opentype"), url("../../assets/icon-fonts/course-features/fonts/icomoon.ttf?fa13rq") format("truetype"), url("../../assets/icon-fonts/course-features/fonts/icomoon.woff?fa13rq") format("woff"), url("../../assets/icon-fonts/course-features/fonts/icomoon.svg?fa13rq#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Enable Ligatures ================ */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-school:before {
+  content: "\e900";
+}
+
+.icon-handshake-o:before {
+  content: "\e903";
+}
+
+.icon-group:before {
+  content: "\e904";
+}
+
+.icon-users:before {
+  content: "\e904";
+}
+
+.icon-gbp:before {
+  content: "\e905";
+}
+
+.icon-laptop:before {
+  content: "\e901";
+}
+
+.icon-home3:before {
+  content: "\e902";
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("../assets/icon-fonts/social-media/icomoon.eot?f36ori");
+  src: url("../assets/icon-fonts/social-media/icomoon.eot?f36ori#iefix") format("embedded-opentype"), url("../assets/icon-fonts/social-media/icomoon.ttf?f36ori") format("truetype"), url("../assets/icon-fonts/social-media/icomoon.woff?f36ori") format("woff"), url("../assets/icon-fonts/social-media/icomoon.svg?f36ori#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -35,6 +94,48 @@
 
 .icon-linkedin:before {
   content: "\eac9";
+}
+
+section#course-features {
+  padding: 2rem 0;
+  background-color: #fff;
+}
+section#course-features > div {
+  width: 80%;
+  margin: auto;
+  color: #555;
+}
+section#course-features > div h2, section#course-features > div h3 {
+  color: #4183d7;
+  font-weight: 500;
+}
+section#course-features > div h2 {
+  font-size: 2rem;
+}
+section#course-features > div h3 {
+  font-size: 1.7rem;
+  position: relative;
+}
+section#course-features > div h3 span {
+  margin-right: 0.5rem;
+  position: relative;
+  top: 0.1rem;
+}
+section#course-features > div p {
+  font-size: 1.1rem;
+}
+section#course-features > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+}
+@media screen and (min-width: 1020px) {
+  section#course-features > div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(350px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    column-gap: 2rem;
+  }
 }
 
 section#graduates-review div {
