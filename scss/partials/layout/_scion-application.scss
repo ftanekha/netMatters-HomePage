@@ -33,8 +33,9 @@ section#scion-scheme-application{
                     font-weight: 600;
                 };
             }
-            [type=submit]{
-                @include link-button(13rem, 4rem);
+            a.btn-primary{
+                display: block;
+                @include link-button(10rem, 2.25rem);
                 font-weight: 300;
                 font-size: 1.25rem;
                 padding: 1rem 1.5rem;

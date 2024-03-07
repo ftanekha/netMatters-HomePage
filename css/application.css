@@ -206,6 +206,9 @@ section#bootcamp-hero div#bootcamp-hero-container a {
   font-size: 1.5rem;
   text-align: center;
 }
+section#bootcamp-hero div#bootcamp-hero-container a:hover {
+  background-color: #2c75d2;
+}
 section#bootcamp-hero div#bootcamp-hero-container a span {
   display: inline-block;
   padding-top: 1.25rem;
@@ -261,6 +264,9 @@ section#launch-a-career div#launch-a-career-section-container footer div#gvt-fun
   text-align: center;
   padding-top: 0.8rem;
   margin-top: 1rem;
+}
+section#launch-a-career div#launch-a-career-section-container footer div#gvt-funding-info-link a:hover {
+  background-color: #2c75d2;
 }
 
 section#work-from-home {
@@ -402,10 +408,11 @@ section#scion-scheme-application div#scion-scheme-application-container div#cour
   color: #4183d7;
   font-weight: 600;
 }
-section#scion-scheme-application div#scion-scheme-application-container div#course-application [type=submit] {
+section#scion-scheme-application div#scion-scheme-application-container div#course-application a.btn-primary {
+  display: block;
   text-decoration: none;
-  width: 13rem;
-  height: 4rem;
+  width: 10rem;
+  height: 2.25rem;
   background-color: #4183d7;
   color: #fff;
   border: 1px solid transparent;
@@ -413,6 +420,9 @@ section#scion-scheme-application div#scion-scheme-application-container div#cour
   font-weight: 300;
   font-size: 1.25rem;
   padding: 1rem 1.5rem;
+}
+section#scion-scheme-application div#scion-scheme-application-container div#course-application a.btn-primary:hover {
+  background-color: #2c75d2;
 }
 section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry {
   background-color: #e6e7e9;
@@ -504,6 +514,9 @@ section#scion-scheme-application div#scion-scheme-application-container div#boot
   border-radius: 3px;
   font-weight: 300;
   font-size: 1.1rem;
+}
+section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry footer#bootcamp-enquiry-footer div#enquiry-footer-info [type=submit]:hover {
+  background-color: #282b36;
 }
 section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry footer#bootcamp-enquiry-footer div#enquiry-footer-info span::before {
   content: "*";
@@ -602,6 +615,9 @@ section#signup div#subscribe [type=submit] {
   border-radius: 3px;
   font-weight: 300;
   font-size: 1.1rem;
+}
+section#signup div#subscribe [type=submit]:hover {
+  background-color: #282b36;
 }
 
 section#footer-info {
@@ -1198,6 +1214,10 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.btn-primary:hover {
+  background-color: black;
 }
 
 footer#main-footer-container {

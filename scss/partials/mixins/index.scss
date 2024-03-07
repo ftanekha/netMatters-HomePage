@@ -10,6 +10,9 @@
     color: $color;
     border: $border--base;
     border-radius: $border-rad;
+    &:hover{
+        background-color: darken($bg-color, 5%);
+    }
 }
 //signup faux checkbox
 @mixin signup-checkbox{

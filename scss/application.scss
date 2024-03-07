@@ -17,7 +17,9 @@ body{
     flex-direction: column;
     min-height: 100vh;
 }
-
+.btn-primary:hover{
+    background-color: black;
+}
 // main footer
 footer#main-footer-container{
     background: $footer__icons--bgcolor;
