@@ -1,3 +1,8 @@
+//entities
+$arrow-rt: "\2192";
+$checkmark: "\2714";
+$nbspace: "\00A0";
+$asterisk: "\002A";
 //base
 $base--fontface: Poppins,sans-serif;
 $base--color: #fff;
@@ -7,14 +12,14 @@ $bg--sombre: #999aa2;
 $bg--dark: #333645;
 $border--base: 1px solid transparent;
 $border--base-radius: 3px;
+//review
+$review__star--bgcolor: orange;
 //signup form
 $signup__form--bgcolor: #ddd;
 $signup__form--color: $bg--dark;
 $asterisk--color: #d24d57;
 $signup__checkbox--size: 2rem;
 $signup__checkbox--border: 3px solid $signup__form--color;
-$checkmark: "\2714";
-$asterisk: "\002A";
 //footer
 $footer__info--bgcolor: #323544;
 $footer__icons--bgcolor: #212330;

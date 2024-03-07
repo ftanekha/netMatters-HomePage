@@ -1,16 +1,52 @@
 section#scion-scheme-application{
     background-color: $base--color;
     div#scion-scheme-application-container{
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
+        padding: 4rem 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.5rem;
+        @media screen and (min-width: 1020px){
+            padding: 10% auto;
+            flex-direction: row;
+            column-gap: 3rem;
+        }
         div#course-application{
-
+            img{
+                max-width: 100%;
+                margin: 0;
+                border-radius: 3px;
+            }
+            h3{
+                color: $bg--primary;
+                font-weight: 400;
+                font-size: 2rem;
+            }
+            p{
+                padding: .5rem 0;
+                color: #555;
+                font-size: 1.1rem;
+                a{
+                    text-decoration: none;
+                    color: $bg--primary;
+                    font-weight: 600;
+                };
+            }
+            [type=submit]{
+                @include link-button(13rem, 4rem);
+                font-weight: 300;
+                font-size: 1.25rem;
+                padding: 1rem 1.5rem;
+            }
         }
         div#bootcamp-enquiry{
             background-color: #e6e7e9;
             border-radius: 10px;
             padding: 30px;
             div#enquiry-form{
+                display: flex;
+                flex-direction: column;
                 div.enquiry-form{
                     margin-bottom: 1rem;
                     label{
@@ -25,8 +61,7 @@ section#scion-scheme-application{
                     };
                     input{
                         border: none;
-                        width: 90%;
-                        margin: auto;
+                        max-width: 80%; 
                         height: 47px;
                         padding: 5px 15px;
                         &:focus{    
@@ -34,7 +69,7 @@ section#scion-scheme-application{
                         }
                     }
                     textarea{
-                        width: 510px; 
+                        max-width: 80%; 
                         height: 209px; 
                         padding: 5px 15px;
                         border: 1px solid #e5e5e5;
@@ -44,18 +79,10 @@ section#scion-scheme-application{
                         font-size: 1rem;
                     }
                 }
-                @media (min-width: 1020px){
-                    flex-direction: row;
-                    justify-content: space-between;
-                    column-gap: 4rem;
-                    div.enquiry-form{
-                        width: 50%;
-                    }
-                }
             }
             //signup footer
             footer#bootcamp-enquiry-footer{
-                width: 90%;
+                width: 80%;
                 margin: 1rem 0;
                 div.signup-checkbox{
                     float: left;
