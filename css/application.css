@@ -96,6 +96,36 @@
   content: "\eac9";
 }
 
+section#work-from-home {
+  background-color: #4183d7;
+  color: #fff;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+section#work-from-home div#work-from-home-container {
+  width: 80%;
+  margin: 0 auto;
+}
+section#work-from-home div#work-from-home-container h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+section#work-from-home div#work-from-home-container div {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1020px) {
+  section#work-from-home div#work-from-home-container div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 4rem;
+  }
+}
+section#work-from-home div#work-from-home-container div p {
+  font-size: 1.1rem;
+}
+
 section#course-features {
   padding: 2rem 0;
   background-color: #fff;
