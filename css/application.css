@@ -37,6 +37,35 @@
   content: "\eac9";
 }
 
+section#graduates-review div {
+  width: 80%;
+  margin: auto;
+  color: #fff;
+}
+section#graduates-review div h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+section#graduates-review div div {
+  margin: 0;
+  padding: 0;
+}
+section#graduates-review div span.star {
+  color: orange;
+  font-size: 4rem;
+}
+section#graduates-review div p {
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+section#graduates-review div cite {
+  color: #999aa2;
+  font-style: normal;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
 section#scion-scheme-application {
   background-color: #fff;
 }
