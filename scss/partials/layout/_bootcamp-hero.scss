@@ -1,0 +1,38 @@
+section#bootcamp-hero{
+    background-image: url(../../../assets/images/skills-bootcamp-heroe.jpg);
+    background-attachment: local;
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0;
+    margin-top: 0 auto;
+    div#bootcamp-hero-container{
+        width: 87%;
+        margin: auto;
+        h1, p{
+            color: $base--color;
+        }
+        h1{
+            font: {
+                size: 4.5rem;
+                weight: 600;
+            }
+        }
+        p{
+            font: {
+                size: 1.75rem;
+                weight: 700;
+            }
+        }
+        a{
+            display: inline-block;
+            @include link-button(13rem, 4.5rem, $bg--primary);
+            font-weight: 400;
+            font-size: 1.5rem;
+            text-align: center;
+            span{
+                display: inline-block;
+                padding-top: 1.25rem;
+            }
+        }
+    }
+}

@@ -18,17 +18,12 @@ body{
     min-height: 100vh;
 }
 
-//main
-main{
-    flex-grow: 1;
-}
-
 // main footer
 footer#main-footer-container{
     background: $footer__icons--bgcolor;
     #main-footer{
         background: $footer__icons--bgcolor;
-        width: 80%;
+        width: 87%;
         margin: 0 auto;
         color: $base--color;
         line-height: 1.375rem;
