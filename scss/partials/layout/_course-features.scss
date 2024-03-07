@@ -28,7 +28,7 @@ section#course-features{
             display: flex;
             flex-direction: column;
             margin: 1rem auto;
-            @media screen and (min-width: 1020px) {
+            @media screen and (min-width: 950px) {
                 display: grid;
                 grid-template-columns: repeat(3, minmax(350px, 1fr));
                 grid-template-rows: 1fr 1fr;
