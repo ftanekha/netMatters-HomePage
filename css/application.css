@@ -96,6 +96,58 @@
   content: "\eac9";
 }
 
+section#launch-a-career {
+  background-color: #fff;
+  padding: 2rem 0 4rem;
+}
+section#launch-a-career div#launch-a-career-section-container {
+  width: 87%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+section#launch-a-career div#launch-a-career-section-container div#no-experience-required {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding: 3rem 0 5rem;
+}
+@media screen and (min-width: 1020px) {
+  section#launch-a-career div#launch-a-career-section-container div#no-experience-required {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+  }
+}
+section#launch-a-career div#launch-a-career-section-container div#no-experience-required div img {
+  max-width: 90%;
+  margin: auto;
+}
+section#launch-a-career div#launch-a-career-section-container h2 {
+  color: #4183d7;
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+section#launch-a-career div#launch-a-career-section-container p {
+  font-size: 1.1rem;
+  color: #555;
+}
+section#launch-a-career div#launch-a-career-section-container footer div#gvt-funding-info-link a {
+  display: inline-block;
+  text-decoration: none;
+  width: 11rem;
+  height: 2.5rem;
+  background-color: #4183d7;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: center;
+  padding-top: 0.8rem;
+  margin-top: 1rem;
+}
+
 section#work-from-home {
   background-color: #4183d7;
   color: #fff;
@@ -103,7 +155,7 @@ section#work-from-home {
   padding-bottom: 3rem;
 }
 section#work-from-home div#work-from-home-container {
-  width: 80%;
+  width: 87%;
   margin: 0 auto;
 }
 section#work-from-home div#work-from-home-container h2 {
@@ -131,7 +183,7 @@ section#course-features {
   background-color: #fff;
 }
 section#course-features > div {
-  width: 80%;
+  width: 87%;
   margin: auto;
   color: #555;
 }
@@ -169,7 +221,7 @@ section#course-features > div:nth-child(2) {
 }
 
 section#graduates-review div {
-  width: 80%;
+  width: 87%;
   margin: auto;
   color: #fff;
 }
@@ -201,7 +253,7 @@ section#scion-scheme-application {
   background-color: #fff;
 }
 section#scion-scheme-application div#scion-scheme-application-container {
-  width: 80%;
+  width: 87%;
   margin: 0 auto;
   padding: 4rem 0;
   display: flex;
@@ -289,7 +341,7 @@ section#scion-scheme-application div#scion-scheme-application-container div#boot
   font-size: 1rem;
 }
 section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry footer#bootcamp-enquiry-footer {
-  width: 80%;
+  width: 87%;
   margin: 1rem 0;
 }
 section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry footer#bootcamp-enquiry-footer div.signup-checkbox {
@@ -349,7 +401,7 @@ section#signup {
   padding: 4rem 0;
 }
 section#signup div#signup-form-container {
-  width: 80%;
+  width: 87%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -392,7 +444,7 @@ section#signup label, section#signup p {
   font-weight: 600;
 }
 section#signup footer#signup-footer {
-  width: 80%;
+  width: 87%;
   margin: 1rem auto;
 }
 section#signup footer#signup-footer div.signup-checkbox {
@@ -422,7 +474,7 @@ section#signup footer#signup-footer p a:visited {
   color: #000;
 }
 section#signup div#subscribe {
-  width: 80%;
+  width: 87%;
   margin: 4rem auto 0;
 }
 section#signup div#subscribe [type=submit] {
@@ -438,7 +490,7 @@ section#signup div#subscribe [type=submit] {
 }
 
 section#footer-info {
-  width: 80%;
+  width: 87%;
   margin: 0 auto;
   padding: 2.5rem 4rem;
   display: flex;
