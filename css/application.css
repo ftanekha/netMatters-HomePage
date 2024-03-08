@@ -226,137 +226,179 @@ nav ul#header-lower-container {
     display: none;
   }
 }
-nav ul#header-lower-container li:nth-child(1) {
+nav ul#header-lower-container li:nth-child(1) a:link {
+  text-decoration: none;
+}
+nav ul#header-lower-container li:nth-child(1) a:link, nav ul#header-lower-container li:nth-child(1) a:visited {
+  color: #fff;
+}
+nav ul#header-lower-container li:nth-child(1) a div {
   text-transform: uppercase;
   display: inline-flex;
   flex-direction: column;
   padding: 2rem auto;
 }
-nav ul#header-lower-container li:nth-child(1) * {
+nav ul#header-lower-container li:nth-child(1) a div * {
   text-align: center;
 }
-nav ul#header-lower-container li:nth-child(1) span:first-child {
+nav ul#header-lower-container li:nth-child(1) a div span:first-child {
   color: #67809f;
   font-size: 1.75rem;
 }
-nav ul#header-lower-container li:nth-child(1) small {
+nav ul#header-lower-container li:nth-child(1) a div small {
   font-size: 0.7rem;
 }
-nav ul#header-lower-container li:nth-child(1) span:last-child {
+nav ul#header-lower-container li:nth-child(1) a div span:last-child {
   font-size: 1.2rem;
 }
-nav ul#header-lower-container li:nth-child(2) {
+nav ul#header-lower-container li:nth-child(2) a:link {
+  text-decoration: none;
+}
+nav ul#header-lower-container li:nth-child(2) a:link, nav ul#header-lower-container li:nth-child(2) a:visited {
+  color: #fff;
+}
+nav ul#header-lower-container li:nth-child(2) a div {
   text-transform: uppercase;
   display: inline-flex;
   flex-direction: column;
   padding: 2rem auto;
 }
-nav ul#header-lower-container li:nth-child(2) * {
+nav ul#header-lower-container li:nth-child(2) a div * {
   text-align: center;
 }
-nav ul#header-lower-container li:nth-child(2) span:first-child {
+nav ul#header-lower-container li:nth-child(2) a div span:first-child {
   color: #4183d7;
   font-size: 1.75rem;
 }
-nav ul#header-lower-container li:nth-child(2) small {
+nav ul#header-lower-container li:nth-child(2) a div small {
   font-size: 0.7rem;
 }
-nav ul#header-lower-container li:nth-child(2) span:last-child {
+nav ul#header-lower-container li:nth-child(2) a div span:last-child {
   font-size: 1.2rem;
 }
-nav ul#header-lower-container li:nth-child(3) {
+nav ul#header-lower-container li:nth-child(3) a:link {
+  text-decoration: none;
+}
+nav ul#header-lower-container li:nth-child(3) a:link, nav ul#header-lower-container li:nth-child(3) a:visited {
+  color: #fff;
+}
+nav ul#header-lower-container li:nth-child(3) a div {
   text-transform: uppercase;
   display: inline-flex;
   flex-direction: column;
   padding: 2rem auto;
 }
-nav ul#header-lower-container li:nth-child(3) * {
+nav ul#header-lower-container li:nth-child(3) a div * {
   text-align: center;
 }
-nav ul#header-lower-container li:nth-child(3) span:first-child {
+nav ul#header-lower-container li:nth-child(3) a div span:first-child {
   color: #2ecc71;
   font-size: 1.75rem;
 }
-nav ul#header-lower-container li:nth-child(3) small {
+nav ul#header-lower-container li:nth-child(3) a div small {
   font-size: 0.7rem;
 }
-nav ul#header-lower-container li:nth-child(3) span:last-child {
+nav ul#header-lower-container li:nth-child(3) a div span:last-child {
   font-size: 1.2rem;
 }
-nav ul#header-lower-container li:nth-child(4) {
+nav ul#header-lower-container li:nth-child(4) a:link {
+  text-decoration: none;
+}
+nav ul#header-lower-container li:nth-child(4) a:link, nav ul#header-lower-container li:nth-child(4) a:visited {
+  color: #fff;
+}
+nav ul#header-lower-container li:nth-child(4) a div {
   text-transform: uppercase;
   display: inline-flex;
   flex-direction: column;
   padding: 2rem auto;
 }
-nav ul#header-lower-container li:nth-child(4) * {
+nav ul#header-lower-container li:nth-child(4) a div * {
   text-align: center;
 }
-nav ul#header-lower-container li:nth-child(4) span:first-child {
+nav ul#header-lower-container li:nth-child(4) a div span:first-child {
   color: #d64541;
   font-size: 1.75rem;
 }
-nav ul#header-lower-container li:nth-child(4) small {
+nav ul#header-lower-container li:nth-child(4) a div small {
   font-size: 0.7rem;
 }
-nav ul#header-lower-container li:nth-child(4) span:last-child {
+nav ul#header-lower-container li:nth-child(4) a div span:last-child {
   font-size: 1.2rem;
 }
-nav ul#header-lower-container li:nth-child(5) {
+nav ul#header-lower-container li:nth-child(5) a:link {
+  text-decoration: none;
+}
+nav ul#header-lower-container li:nth-child(5) a:link, nav ul#header-lower-container li:nth-child(5) a:visited {
+  color: #fff;
+}
+nav ul#header-lower-container li:nth-child(5) a div {
   text-transform: uppercase;
   display: inline-flex;
   flex-direction: column;
   padding: 2rem auto;
 }
-nav ul#header-lower-container li:nth-child(5) * {
+nav ul#header-lower-container li:nth-child(5) a div * {
   text-align: center;
 }
-nav ul#header-lower-container li:nth-child(5) span:first-child {
+nav ul#header-lower-container li:nth-child(5) a div span:first-child {
   color: #926fb1;
   font-size: 1.75rem;
 }
-nav ul#header-lower-container li:nth-child(5) small {
+nav ul#header-lower-container li:nth-child(5) a div small {
   font-size: 0.7rem;
 }
-nav ul#header-lower-container li:nth-child(5) span:last-child {
+nav ul#header-lower-container li:nth-child(5) a div span:last-child {
   font-size: 1.2rem;
 }
-nav ul#header-lower-container li:nth-child(6) {
+nav ul#header-lower-container li:nth-child(6) a:link {
+  text-decoration: none;
+}
+nav ul#header-lower-container li:nth-child(6) a:link, nav ul#header-lower-container li:nth-child(6) a:visited {
+  color: #fff;
+}
+nav ul#header-lower-container li:nth-child(6) a div {
   text-transform: uppercase;
   display: inline-flex;
   flex-direction: column;
   padding: 2rem auto;
 }
-nav ul#header-lower-container li:nth-child(6) * {
+nav ul#header-lower-container li:nth-child(6) a div * {
   text-align: center;
 }
-nav ul#header-lower-container li:nth-child(6) span:first-child {
+nav ul#header-lower-container li:nth-child(6) a div span:first-child {
   color: #f62459;
   font-size: 1.75rem;
 }
-nav ul#header-lower-container li:nth-child(6) small {
+nav ul#header-lower-container li:nth-child(6) a div small {
   font-size: 0.7rem;
 }
-nav ul#header-lower-container li:nth-child(6) span:last-child {
+nav ul#header-lower-container li:nth-child(6) a div span:last-child {
   font-size: 1.2rem;
 }
-nav ul#header-lower-container li:nth-child(7) {
+nav ul#header-lower-container li:nth-child(7) a:link {
+  text-decoration: none;
+}
+nav ul#header-lower-container li:nth-child(7) a:link, nav ul#header-lower-container li:nth-child(7) a:visited {
+  color: #fff;
+}
+nav ul#header-lower-container li:nth-child(7) a div {
   text-transform: uppercase;
   display: inline-flex;
   flex-direction: column;
   padding: 2rem auto;
 }
-nav ul#header-lower-container li:nth-child(7) * {
+nav ul#header-lower-container li:nth-child(7) a div * {
   text-align: center;
 }
-nav ul#header-lower-container li:nth-child(7) span:first-child {
+nav ul#header-lower-container li:nth-child(7) a div span:first-child {
   color: #ce4125;
   font-size: 1.75rem;
 }
-nav ul#header-lower-container li:nth-child(7) small {
+nav ul#header-lower-container li:nth-child(7) a div small {
   font-size: 0.7rem;
 }
-nav ul#header-lower-container li:nth-child(7) span:last-child {
+nav ul#header-lower-container li:nth-child(7) a div span:last-child {
   font-size: 1.2rem;
 }
 
