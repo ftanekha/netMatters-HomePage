@@ -1,6 +1,48 @@
 @charset "UTF-8";
 @font-face {
   font-family: "icomoon";
+  src: url("../../assets/icon-fonts/header-lower/fonts/icomoon.eot?nloaem");
+  src: url("../../assets/icon-fonts/header-lower/fonts/icomoon.eot?nloaem#iefix") format("embedded-opentype"), url("../../assets/icon-fonts/header-lower/fonts/icomoon.ttf?nloaem") format("truetype"), url("../../assets/icon-fonts/header-lower/fonts/icomoon.woff?nloaem") format("woff"), url("../../assets/icon-fonts/header-lower/fonts/icomoon.svg?nloaem#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bar-graph:before {
+  content: "\e900";
+}
+
+.icon-security:before {
+  content: "\e901";
+}
+
+.icon-phone_in_talk:before {
+  content: "\e902";
+}
+
+.icon-desktop:before {
+  content: "\e903";
+}
+
+.icon-code:before {
+  content: "\e904";
+}
+
+@font-face {
+  font-family: "icomoon";
   src: url("../../assets/icon-fonts/arrow-rt/fonts/icomoon.eot?z7w9gk");
   src: url("../../assets/icon-fonts/arrow-rt/fonts/icomoon.eot?z7w9gk#iefix") format("embedded-opentype"), url("../../assets/icon-fonts/arrow-rt/fonts/icomoon.ttf?z7w9gk") format("truetype"), url("../../assets/icon-fonts/arrow-rt/fonts/icomoon.woff?z7w9gk") format("woff"), url("../../assets/icon-fonts/arrow-rt/fonts/icomoon.svg?z7w9gk#icomoon") format("svg");
   font-weight: normal;
@@ -168,6 +210,154 @@
 
 .icon-linkedin2:before {
   content: "\eaca";
+}
+
+nav ul#header-lower-container {
+  padding: 1.25rem;
+  width: 75%;
+  margin: auto;
+  list-style-type: none;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1260px) {
+  nav ul#header-lower-container {
+    display: none;
+  }
+}
+nav ul#header-lower-container li:nth-child(1) {
+  text-transform: uppercase;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 2rem auto;
+}
+nav ul#header-lower-container li:nth-child(1) * {
+  text-align: center;
+}
+nav ul#header-lower-container li:nth-child(1) span:first-child {
+  color: #67809f;
+  font-size: 1.75rem;
+}
+nav ul#header-lower-container li:nth-child(1) small {
+  font-size: 0.7rem;
+}
+nav ul#header-lower-container li:nth-child(1) span:last-child {
+  font-size: 1.2rem;
+}
+nav ul#header-lower-container li:nth-child(2) {
+  text-transform: uppercase;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 2rem auto;
+}
+nav ul#header-lower-container li:nth-child(2) * {
+  text-align: center;
+}
+nav ul#header-lower-container li:nth-child(2) span:first-child {
+  color: #4183d7;
+  font-size: 1.75rem;
+}
+nav ul#header-lower-container li:nth-child(2) small {
+  font-size: 0.7rem;
+}
+nav ul#header-lower-container li:nth-child(2) span:last-child {
+  font-size: 1.2rem;
+}
+nav ul#header-lower-container li:nth-child(3) {
+  text-transform: uppercase;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 2rem auto;
+}
+nav ul#header-lower-container li:nth-child(3) * {
+  text-align: center;
+}
+nav ul#header-lower-container li:nth-child(3) span:first-child {
+  color: #2ecc71;
+  font-size: 1.75rem;
+}
+nav ul#header-lower-container li:nth-child(3) small {
+  font-size: 0.7rem;
+}
+nav ul#header-lower-container li:nth-child(3) span:last-child {
+  font-size: 1.2rem;
+}
+nav ul#header-lower-container li:nth-child(4) {
+  text-transform: uppercase;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 2rem auto;
+}
+nav ul#header-lower-container li:nth-child(4) * {
+  text-align: center;
+}
+nav ul#header-lower-container li:nth-child(4) span:first-child {
+  color: #d64541;
+  font-size: 1.75rem;
+}
+nav ul#header-lower-container li:nth-child(4) small {
+  font-size: 0.7rem;
+}
+nav ul#header-lower-container li:nth-child(4) span:last-child {
+  font-size: 1.2rem;
+}
+nav ul#header-lower-container li:nth-child(5) {
+  text-transform: uppercase;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 2rem auto;
+}
+nav ul#header-lower-container li:nth-child(5) * {
+  text-align: center;
+}
+nav ul#header-lower-container li:nth-child(5) span:first-child {
+  color: #926fb1;
+  font-size: 1.75rem;
+}
+nav ul#header-lower-container li:nth-child(5) small {
+  font-size: 0.7rem;
+}
+nav ul#header-lower-container li:nth-child(5) span:last-child {
+  font-size: 1.2rem;
+}
+nav ul#header-lower-container li:nth-child(6) {
+  text-transform: uppercase;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 2rem auto;
+}
+nav ul#header-lower-container li:nth-child(6) * {
+  text-align: center;
+}
+nav ul#header-lower-container li:nth-child(6) span:first-child {
+  color: #f62459;
+  font-size: 1.75rem;
+}
+nav ul#header-lower-container li:nth-child(6) small {
+  font-size: 0.7rem;
+}
+nav ul#header-lower-container li:nth-child(6) span:last-child {
+  font-size: 1.2rem;
+}
+nav ul#header-lower-container li:nth-child(7) {
+  text-transform: uppercase;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 2rem auto;
+}
+nav ul#header-lower-container li:nth-child(7) * {
+  text-align: center;
+}
+nav ul#header-lower-container li:nth-child(7) span:first-child {
+  color: #ce4125;
+  font-size: 1.75rem;
+}
+nav ul#header-lower-container li:nth-child(7) small {
+  font-size: 0.7rem;
+}
+nav ul#header-lower-container li:nth-child(7) span:last-child {
+  font-size: 1.2rem;
 }
 
 section#bootcamp-hero {

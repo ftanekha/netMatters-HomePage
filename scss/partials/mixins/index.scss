@@ -1,3 +1,24 @@
+//nav-items
+@mixin nav-item($color){
+    text-transform: uppercase;
+    display: inline-flex;
+    flex-direction: column;
+    padding: 2rem auto;
+    *{
+        text-align: center;
+    }
+    //icon
+    span:first-child{
+        color: $color;
+        font-size: 1.75rem;
+    }
+    small{
+        font-size: .7rem;
+    }
+    span:last-child{
+        font-size: 1.2rem;
+    }
+}
 //buttons
 @mixin link-button(
     $width: 6rem, $height: 3rem, $bg-color: $bg--primary, 
