@@ -1,6 +1,36 @@
 @charset "UTF-8";
 @font-face {
   font-family: "icomoon";
+  src: url("../../assets/icon-fonts/bar-and-star/fonts/icomoon.eot?ue4k7a");
+  src: url("../../assets/icon-fonts/bar-and-star/fonts/icomoon.eot?ue4k7a#iefix") format("embedded-opentype"), url("../../assets/icon-fonts/bar-and-star/fonts/icomoon.ttf?ue4k7a") format("truetype"), url("../../assets/icon-fonts/bar-and-star/fonts/icomoon.woff?ue4k7a") format("woff"), url("../../assets/icon-fonts/bar-and-star/fonts/icomoon.svg?ue4k7a#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bar-graph:before {
+  content: "\e900";
+}
+
+.icon-star-full:before {
+  content: "\e9d9";
+}
+
+@font-face {
+  font-family: "icomoon";
   src: url("../../assets/icon-fonts/header/fonts/icomoon.eot?dpfmnu");
   src: url("../../assets/icon-fonts/header/fonts/icomoon.eot?dpfmnu#iefix") format("embedded-opentype"), url("../../assets/icon-fonts/header/fonts/icomoon.ttf?dpfmnu") format("truetype"), url("../../assets/icon-fonts/header/fonts/icomoon.woff?dpfmnu") format("woff"), url("../../assets/icon-fonts/header/fonts/icomoon.svg?dpfmnu#icomoon") format("svg");
   font-weight: normal;
@@ -490,6 +520,9 @@ div#header-upper-container div#contact span:last-child {
   border-radius: 3px;
   padding-top: 0.5rem;
 }
+div#header-upper-container div#contact span:last-child:hover {
+  background-color: #282b36;
+}
 div#header-upper-container div#search-field-container {
   width: 100%;
   position: relative;
@@ -522,6 +555,9 @@ div#header-upper-container div#search-field-container span {
   text-align: center;
   padding-top: 1.2rem;
   border-radius: 0 3px 3px 0;
+}
+div#header-upper-container div#search-field-container span:hover {
+  background-color: #545871;
 }
 @media only screen and (min-width: 950px) {
   div#header-upper-container {
@@ -556,9 +592,11 @@ div#header-upper-container div#search-field-container span {
     font-size: 1.5rem;
   }
   div#header-upper-container div#optional-support-contact a {
+    box-sizing: border-box;
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    padding: 0.5rem;
   }
   div#header-upper-container div#optional-support-contact a:first-child {
     text-decoration: none;
@@ -590,8 +628,7 @@ nav {
   background-color: #333645;
 }
 nav ul#header-lower-container {
-  padding: 1.25rem;
-  width: 75%;
+  width: 87%;
   margin: auto;
   list-style-type: none;
   color: #fff;
@@ -602,6 +639,15 @@ nav ul#header-lower-container {
   nav ul#header-lower-container {
     display: none;
   }
+}
+nav ul#header-lower-container li:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  padding: 1.25rem;
+  text-align: center;
+}
+nav ul#header-lower-container li:nth-child(1):hover {
+  background-color: #67809f;
 }
 nav ul#header-lower-container li:nth-child(1) a:link {
   text-decoration: none;
@@ -628,6 +674,15 @@ nav ul#header-lower-container li:nth-child(1) a div small {
 nav ul#header-lower-container li:nth-child(1) a div span:last-child {
   font-size: 1.2rem;
 }
+nav ul#header-lower-container li:nth-child(2) {
+  width: 100%;
+  height: 100%;
+  padding: 1.25rem;
+  text-align: center;
+}
+nav ul#header-lower-container li:nth-child(2):hover {
+  background-color: #4183d7;
+}
 nav ul#header-lower-container li:nth-child(2) a:link {
   text-decoration: none;
 }
@@ -652,6 +707,15 @@ nav ul#header-lower-container li:nth-child(2) a div small {
 }
 nav ul#header-lower-container li:nth-child(2) a div span:last-child {
   font-size: 1.2rem;
+}
+nav ul#header-lower-container li:nth-child(3) {
+  width: 100%;
+  height: 100%;
+  padding: 1.25rem;
+  text-align: center;
+}
+nav ul#header-lower-container li:nth-child(3):hover {
+  background-color: #2ecc71;
 }
 nav ul#header-lower-container li:nth-child(3) a:link {
   text-decoration: none;
@@ -678,6 +742,15 @@ nav ul#header-lower-container li:nth-child(3) a div small {
 nav ul#header-lower-container li:nth-child(3) a div span:last-child {
   font-size: 1.2rem;
 }
+nav ul#header-lower-container li:nth-child(4) {
+  width: 100%;
+  height: 100%;
+  padding: 1.25rem;
+  text-align: center;
+}
+nav ul#header-lower-container li:nth-child(4):hover {
+  background-color: #d64541;
+}
 nav ul#header-lower-container li:nth-child(4) a:link {
   text-decoration: none;
 }
@@ -702,6 +775,15 @@ nav ul#header-lower-container li:nth-child(4) a div small {
 }
 nav ul#header-lower-container li:nth-child(4) a div span:last-child {
   font-size: 1.2rem;
+}
+nav ul#header-lower-container li:nth-child(5) {
+  width: 100%;
+  height: 100%;
+  padding: 1.25rem;
+  text-align: center;
+}
+nav ul#header-lower-container li:nth-child(5):hover {
+  background-color: #926fb1;
 }
 nav ul#header-lower-container li:nth-child(5) a:link {
   text-decoration: none;
@@ -728,6 +810,15 @@ nav ul#header-lower-container li:nth-child(5) a div small {
 nav ul#header-lower-container li:nth-child(5) a div span:last-child {
   font-size: 1.2rem;
 }
+nav ul#header-lower-container li:nth-child(6) {
+  width: 100%;
+  height: 100%;
+  padding: 1.25rem;
+  text-align: center;
+}
+nav ul#header-lower-container li:nth-child(6):hover {
+  background-color: #f62459;
+}
 nav ul#header-lower-container li:nth-child(6) a:link {
   text-decoration: none;
 }
@@ -752,6 +843,15 @@ nav ul#header-lower-container li:nth-child(6) a div small {
 }
 nav ul#header-lower-container li:nth-child(6) a div span:last-child {
   font-size: 1.2rem;
+}
+nav ul#header-lower-container li:nth-child(7) {
+  width: 100%;
+  height: 100%;
+  padding: 1.25rem;
+  text-align: center;
+}
+nav ul#header-lower-container li:nth-child(7):hover {
+  background-color: #ce4125;
 }
 nav ul#header-lower-container li:nth-child(7) a:link {
   text-decoration: none;
@@ -801,6 +901,11 @@ section#bootcamp-hero div#bootcamp-hero-container h1 {
 section#bootcamp-hero div#bootcamp-hero-container p {
   font-size: 1.75rem;
   font-weight: 700;
+}
+@media only screen and (min-width: 1235px) {
+  section#bootcamp-hero div#bootcamp-hero-container p {
+    width: 60%;
+  }
 }
 section#bootcamp-hero div#bootcamp-hero-container a {
   display: inline-block;
@@ -963,7 +1068,7 @@ section#graduates-review div div {
   margin: 0;
   padding: 0;
 }
-section#graduates-review div span.star {
+section#graduates-review div span.icon-star-full {
   color: orange;
   font-size: 4rem;
 }

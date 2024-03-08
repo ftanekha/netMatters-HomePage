@@ -1,5 +1,12 @@
 //nav-items
 @mixin nav-item($color){
+    width: 100%;
+    height: 100%;
+    padding: 1.25rem;
+    text-align: center;
+    &:hover{
+        background-color: $color;
+    }
     a{
         &:link{
             text-decoration: none;

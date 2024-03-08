@@ -13,7 +13,7 @@ div#header-upper-container{
         display: flex;
         justify-content: flex-start;
         img{
-            max-width: 400px;;
+            max-width: 400px;
             max-height: 100px;
         }
     }
@@ -53,6 +53,9 @@ div#header-upper-container{
                 min-width: 4rem;
                 border-radius: 3px;
                 padding-top: .5rem;
+                &:hover{
+                    background-color: darken($bg--dark, 5%);
+                }
             }  
         }
     }
@@ -88,6 +91,9 @@ div#header-upper-container{
             text-align: center;
             padding-top: 1.2rem;
             border-radius: 0 3px 3px 0;
+            &:hover{
+                background-color: lighten($bg--dark, 15%);
+            }
         }
     }
     //first break point
@@ -126,9 +132,11 @@ div#header-upper-container{
             column-gap: .75rem;
             font-size: 1.5rem;
             a{
+                box-sizing: border-box;
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;
+                padding: .5rem;
             }
             //support
             a:first-child{

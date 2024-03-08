@@ -22,6 +22,9 @@ section#bootcamp-hero{
                 size: 1.75rem;
                 weight: 700;
             }
+            @media only screen and (min-width: 1235px){
+                width: 60%;
+            }
         }
         a{
             display: inline-block;
