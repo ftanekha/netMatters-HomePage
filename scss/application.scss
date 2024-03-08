@@ -20,6 +20,9 @@ body{
 .btn-primary:hover{
     background-color: black;
 }
+header{
+    background-color: $base--color;
+}
 // main footer
 footer#main-footer-container{
     background: $footer__icons--bgcolor;
