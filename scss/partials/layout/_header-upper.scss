@@ -4,41 +4,61 @@ div#header-upper-container{
     width: 87%;
     margin: auto;
     display: flex;
-    flex-direction: column;
-    div#small-screen-logo-and-contact-container{
-        display: grid;
-        grid-template-columns: 5fr 2fr;
-        justify-content: space-between;
-        div#logo-container{
-            flex-shrink: 5;
-        }
-        div#contact{
-            flex-shrink: 2;
-            display: flex;
-            justify-content: flex-end;
-            column-gap: 2rem;
-            //icons
-            span{
-                &:first-child{
-                    color: $bg--dark;
-                    font-size: 2rem;
-                    padding-top: .75rem;
-                }
-                &:last-child{
-                    color: $base--color;
-                    background-color: $bg--dark;
-                    font-size: 2.75rem;
-                    font-weight: 100;
-                    text-align: center;
-                    height: 3.5rem; 
-                    width: 4.5rem;
-                    border-radius: 3px;
-                    padding-top: .5rem;
-                }  
-            }
+    flex-wrap: wrap;
+    //logo
+    div#logo-container{
+        padding: 1rem 0;
+        width: 70%;
+        flex-shrink: 1;
+        display: flex;
+        justify-content: flex-start;
+        img{
+            max-width: 400px;;
+            max-height: 100px;
         }
     }
+    //optional-support-contact
+    div#optional-support-contact{
+        display: none;
+    }
+    //contact phone & menu icon
+    div#contact{
+        width: 30%;
+        flex-shrink: 1;
+        padding: 1rem 0;
+        display: flex;
+        justify-content: flex-end;
+        column-gap: 1.5rem;
+        //icons
+        span{
+            //phone
+            &:first-child{
+                color: $bg--dark;
+                font-size: 2rem;
+                padding-top: .75rem;
+                //hide @950px
+                @media only screen and (min-width: 950px){
+                    display: none;
+                }
+            }
+            //menu/ hamburger
+            &:last-child{
+                box-sizing: border-box;
+                color: $base--color;
+                background-color: $bg--dark;
+                font-size: 2.5rem;
+                font-weight: 100;
+                text-align: center;
+                height: 3.5rem; 
+                min-width: 4rem;
+                border-radius: 3px;
+                padding-top: .5rem;
+            }  
+        }
+    }
+    //search bar
     div#search-field-container{
+        width: 100%;
         position: relative;
         height: 3.5rem;
         input{
@@ -47,18 +67,18 @@ div#header-upper-container{
             height: 100%;
             border: 2px solid rgba(0,0,0,.1);
             outline: 1px solid hsla(0,0%,100%,.2);
-            border-radius: 0 3px 3px 0;
+            border-radius: 3px;
             padding: 1rem;
             background: rgba(0, 0, 0, .1);
-            color: lighte(#555, 75%);
+            color: lighten(#555, 100%);
             font-size: 1rem;
             font-weight: 500;
-            letter-spacing: .05rem;
+            letter-spacing: .025rem;
         }
         span{
             display: block;
             box-sizing: border-box;
-            width: 4.5rem;
+            width: 3rem;
             height: 100%;
             position: absolute;
             top: 0;
@@ -68,6 +88,56 @@ div#header-upper-container{
             text-align: center;
             padding-top: 1.2rem;
             border-radius: 0 3px 3px 0;
+        }
+    }
+    //first break point
+    @media only screen and (min-width: 950px){
+        // padding: -.5rem;
+        flex-wrap: nowrap;
+        align-items: center;
+        column-gap: .75rem;
+        div#contact{
+            order: 1;
+            width: 7%;
+            span:last-child{
+                width: 100%;
+            }
+        }
+        div#search-field-container{
+            width: 33%;
+            //search field
+            input{
+                background-color: $base--color;
+            }
+            //search button
+            span{
+                background-color: $bg--sombre;
+                color: $base--color;
+                height: 3.5rem; 
+                width: 3.5rem;
+            }
+        }
+    }
+    //second breakpoint
+    @media only screen and (min-width: 1235px){
+        //optional-support-contact
+        div#optional-support-contact{
+            display: inline-flex;
+            column-gap: .75rem;
+            font-size: 1.5rem;
+            a{
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+            }
+            //support
+            a:first-child{
+                @include link-button(10rem, 3.5rem, $bg--primary);
+            }
+            //contact
+            a:last-child{
+                @include link-button(10rem, 3.5rem, $bg--sombre);
+            }
         }
     }
 }
