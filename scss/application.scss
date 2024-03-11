@@ -2,9 +2,10 @@
     "icon-fonts/index",
     "partials/index"
 ;
-
-:root{
+*{
     box-sizing: border-box;
+}
+:root{
     background-color: $footer__info--bgcolor;
     font-family: $base--fontface;
     font-size: $base--fontsize;
@@ -16,33 +17,34 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
-.btn-primary:hover{
-    background-color: black;
-}
-header{
-    background-color: $base--color;
-}
-// main footer
-footer#main-footer-container{
-    background: $footer__icons--bgcolor;
-    #main-footer{
-        background: $footer__icons--bgcolor;
-        width: 87%;
-        margin: 0 auto;
-        color: $base--color;
-        line-height: 1.375rem;
-        font-stretch: ultra-expanded;
-        letter-spacing: .025rem;
-        display: flex;
-        flex-direction: column;
-        @media (min-width: 769px){
-            flex-direction: row;
-            p:nth-child(2)::before{
-                content: $nbspace;
-            }
-            p:last-child::before{
-                content: "#{$nbspace} - #{$nbspace}"
+    //main-container
+    div#main-container{
+        margin: auto;
+        header{
+            background-color: $base--color;
+        }
+        // main footer
+        footer#main-footer-container{
+            background: $footer__icons--bgcolor;
+            #main-footer{
+                background: $footer__icons--bgcolor;
+                width: 87%;
+                margin: 0 auto;
+                color: $base--color;
+                line-height: 1.375rem;
+                font-stretch: ultra-expanded;
+                letter-spacing: .025rem;
+                display: flex;
+                flex-direction: column;
+                @media (min-width: 769px){
+                    flex-direction: row;
+                    p:nth-child(2)::before{
+                        content: $nbspace;
+                    }
+                    p:last-child::before{
+                        content: "#{$nbspace} - #{$nbspace}"
+                    }
+                }
             }
         }
     }

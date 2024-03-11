@@ -13,7 +13,7 @@ section{
         font-weight: normal;
         @media (min-width: 1200px){
             grid-template-columns: 1fr 2fr;
-            column-gap: 8rem;
+            column-gap: 4rem;
             //rearrange operations links
             div#footer-menu-container{
                 display: grid;

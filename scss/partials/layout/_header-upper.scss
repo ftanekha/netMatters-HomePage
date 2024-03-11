@@ -43,7 +43,7 @@ div#header-upper-container{
             }
             //menu/ hamburger
             &:last-child{
-                box-sizing: border-box;
+                //box-sizing: border-box;
                 color: $base--color;
                 background-color: $bg--dark;
                 font-size: 2.5rem;
@@ -65,7 +65,7 @@ div#header-upper-container{
         position: relative;
         height: 3.5rem;
         input{
-            box-sizing: border-box;
+            //box-sizing: border-box;
             width: 100%;
             height: 100%;
             border: 2px solid rgba(0,0,0,.1);
@@ -80,7 +80,7 @@ div#header-upper-container{
         }
         span{
             display: block;
-            box-sizing: border-box;
+            //box-sizing: border-box;
             width: 3rem;
             height: 100%;
             position: absolute;
@@ -132,7 +132,7 @@ div#header-upper-container{
             column-gap: .75rem;
             font-size: 1.5rem;
             a{
-                box-sizing: border-box;
+                //box-sizing: border-box;
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;

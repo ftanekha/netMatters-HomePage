@@ -7,10 +7,16 @@ section#scion-scheme-application{
         display: flex;
         flex-direction: column;
         row-gap: 2.5rem;
-        @media screen and (min-width: 1020px){
+        @media only screen and (min-width: 1235px){
             padding: 10% auto;
             flex-direction: row;
+            justify-content: space-between;
             column-gap: 3rem;
+            //div#course-application & div#bootcamp-enquiry should have equal width
+            & > div{
+                // box-sizing: border-box;
+                width: 50%;
+            }
         }
         div#course-application{
             img{
@@ -36,50 +42,92 @@ section#scion-scheme-application{
             //apply now
             a.btn-primary{
                 display: block;
-                @include link-button(10rem, 2.25rem);
-                font-weight: 300;
-                font-size: 1.25rem;
-                padding: 1rem 1.5rem;
+                @include link-button(15rem, 5rem);
+                font-weight: 400;
+                font-size: 1.5rem;
+                padding: 1.25rem 1.5rem;
             }
         }
         div#bootcamp-enquiry{
             background-color: #e6e7e9;
             border-radius: 10px;
-            padding: 30px;
+            padding: 2rem 0px;
             div#enquiry-form{
+                width: 87%;
+                margin: auto;
                 display: flex;
                 flex-direction: column;
-                div.enquiry-form{
-                    margin-bottom: 1rem;
-                    label{
-                        display: block;
-                        font-size: 1.25rem;
-                        font-weight: 600;
-                        margin-bottom: .4rem;
-                        &:after{
-                            content: " \002A";
-                            color: $asterisk--color;
-                        }
-                    };
-                    input{
-                        border: none;
-                        max-width: 80%; 
-                        height: 47px;
-                        padding: 5px 15px;
-                        &:focus{    
-                            box-shadow: inset 0 0 5px #5bc0de;
+                div#enquiry-form-container{
+                    @media only screen and (min-width: 1235px){
+                        display: grid;
+                        grid-template-columns: auto;
+                        // background-color: #2196F3;
+                        //input fields
+                        div.input
+                        {
+                            //box-sizing: border-box;
+                            &:nth-child(1){                        
+                                grid-column: 1 / span 2;
+                                // background: red;
+                                max-width: 100%;
+                                // input{
+                                //     min-width: 85%;
+                                //     max-width: 100%;
+                                // }
+                            }
+                            &:nth-child(2) {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-end;
+                                grid-column: 3 / span 3;
+                                max-width: 100%;
+                                // input{
+                                //     min-width: 85%;
+                                //     max-width: 100%;
+                                // }
+                            }
+                            &:nth-child(3) {
+                                grid-column: 1 / span 2;
+                            }
+                            &:nth-child(4){
+                                grid-column: 1 / span 4;
+                            }
+                            
                         }
                     }
-                    //enquiry message
-                    textarea{
-                        max-width: 80%; 
-                        height: 209px; 
-                        padding: 5px 15px;
-                        border: 1px solid #e5e5e5;
-                        border-radius: 2px;
-                        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-                        color: #555;
-                        font-size: 1rem;
+                    div.enquiry-form{
+                        margin-bottom: 1rem;
+                        label{
+                            display: block;
+                            font-size: 1.25rem;
+                            font-weight: 600;
+                            margin-bottom: .4rem;
+                            &:after{
+                                content: " \002A";
+                                color: $asterisk--color;
+                            }
+                        };
+                        input{
+                            //box-sizing: border-box;
+                            border: none;
+                            width: 95%;
+                            height: 47px;
+                            padding: 5px 15px;
+                            &:focus{    
+                                box-shadow: inset 0 0 5px #5bc0de;
+                            }
+                        }
+                        //enquiry message
+                        // textarea{
+                        //     max-width: 80%; 
+                        //     height: 209px; 
+                        //     // padding: 5px;
+                        //     border: 1px solid #e5e5e5;
+                        //     border-radius: 2px;
+                        //     box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                        //     color: #555;
+                        //     font-size: 1rem;
+                        // }
                     }
                 }
             }
@@ -88,22 +136,18 @@ section#scion-scheme-application{
                 width: 87%;
                 margin: 1rem 0;
                 div.signup-checkbox{
-                    float: left;
-                    @include signup-checkbox;
-                    text-align: center;
-                    //temporary effect in lieu of click event
-                    &:hover{
-                        background-color: $signup__form--color;
-                        color: $base--color;
-                        font-weight: bold;
-                        //checkmark
-                        &:after{
-                            content: "\2714";
-                        }
+                    display: flex;
+                    column-gap: 1.5rem;
+                    position: relative;
+                    span.icon-check{
+                        //box-sizing: border-box;
+                        display: inline-block;
+                        width: 2rem;
+                        height: 2rem;
+                        font-size: 3rem;
+                        font-weight: 100;
+                        color: #ddd;
                     }
-                }
-                p{
-                    margin-left: 4rem;
                 }
                 p, small{
                     font-weight: 600;

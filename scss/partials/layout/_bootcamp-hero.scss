@@ -1,4 +1,9 @@
 section#bootcamp-hero{
+    //
+    filter: invert(0);
+    filter: brightness(100%);
+    background: linear-gradient(270deg, transparent 25%, #000);
+    //
     background-image: url(../../../assets/images/skills-bootcamp-heroe.jpg);
     background-attachment: local;
     background-size: cover;

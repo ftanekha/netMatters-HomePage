@@ -6,6 +6,10 @@
     text-align: center;
     &:hover{
         background-color: $color;
+        // icomoon icon
+        span:first-child{
+            color: $base--color;
+        }
     }
     a{
         &:link{
