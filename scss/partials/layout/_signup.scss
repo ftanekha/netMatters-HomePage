@@ -3,7 +3,7 @@ section#signup{
     color: $signup__form--color;
     padding: 4rem 0;
     div#signup-form-container{
-        width: 87%;
+        width: 80%;
         margin: auto;
         display: flex;
         flex-direction: column;
@@ -49,7 +49,7 @@ section#signup{
     }
     //signup footer
     footer#signup-footer{
-        width: 87%;
+        width: 80%;
         margin: 1rem auto;
         div.signup-checkbox{
             float: left;
@@ -80,7 +80,7 @@ section#signup{
         }
     }
     div#subscribe{
-        width: 87%;
+        width: 80%;
         margin: 4rem auto 0;
         [type=submit]{
             @include link-button(10rem, 3rem, $bg--dark);

@@ -11,7 +11,7 @@
     margin-top: 0 auto;
     h1, p{
         color: $base--color;
-        width: 87%;
+        width: 80%;
         margin: auto;
     }
     h1{
@@ -27,7 +27,7 @@
         }
     }
     a{
-        margin: 3rem 0 2rem 6.5%;
+        margin: 3rem 0 2rem 10%;
         display: block;
         @include link-button(18rem, 5rem, $image-id);
         font-weight: 400;
