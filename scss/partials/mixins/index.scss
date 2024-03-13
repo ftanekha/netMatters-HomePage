@@ -1,72 +1,7 @@
-//nav-items
-@mixin nav-item($color){
-    width: 100%;
-    height: 100%;
-    padding: 1.25rem;
-    text-align: center;
-    &:hover{
-        background-color: $color;
-        // icomoon icon
-        span:first-child{
-            color: $base--color;
-        }
-    }
-    a{
-        &:link{
-            text-decoration: none;
-        }
-        &:link, &:visited{
-            color: $base--color;
-        }
-        div{
-            text-transform: uppercase;
-            display: inline-flex;
-            flex-direction: column;
-            padding: 2rem auto;
-            *{
-                text-align: center;
-            }
-            //icon
-            span:first-child{
-                color: $color;
-                font-size: 1.75rem;
-            }
-            small{
-                font-size: .7rem;
-            }
-            span:last-child{
-                font-size: 1.2rem;
-            }
-        }
-    }
-}
-//buttons
-@mixin link-button(
-    $width: 6rem, $height: 3rem, $bg-color: $bg--primary, 
-    $color: $base--color, $border-rad: $border--base-radius
-){
-    text-decoration: none;
-    width: $width;
-    height: $height;
-    background-color: $bg-color;
-    color: $color;
-    border: $border--base;
-    border-radius: $border-rad;
-    &:hover{
-        background-color: darken($bg-color, 5%);
-    }
-}
-//signup faux checkbox
-@mixin signup-checkbox{
-    width: $signup__checkbox--size;
-    height: $signup__checkbox--size;
-    border: $signup__checkbox--border;
-    border-radius: $border--base-radius;
-}
-// footer social media
-@mixin footer-icons-hover-bg($company-name){
-    &.#{$company-name}:hover{
-        background-color: map-get($footer__icons--hover--bgcolors, "#{$company-name}");
-    }
-}
-
+@import 
+    "nav-item",
+    "hero-container",
+    "link-button",
+    "signup-checkbox",
+    "footer-icons-hover-bg"
+;

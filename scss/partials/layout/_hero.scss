@@ -1,0 +1,27 @@
+section#hero{
+    div.why-choose-us{
+        @include hero-container("why--choose--us");
+    }
+    div.bespoke--software{
+        @include hero-container($bespoke--software);
+    }
+    div.it--support{
+        @include hero-container($it--support);
+    }
+    div.digital--marketing{
+        @include hero-container($digital--marketing);
+    }
+    div.telecoms--services{
+        @include hero-container($telecoms--services);
+    }
+    div.web--design{
+        @include hero-container($web--design);
+    }
+    div.cyber--security{
+        @include hero-container($cyber--security);
+    }  
+
+    div.initially-hidden{
+        display: none;
+    }
+}

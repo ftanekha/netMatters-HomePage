@@ -1,0 +1,41 @@
+@mixin hero-container($image-id: "why-choose-us"){
+    //
+    background: linear-gradient(270deg, transparent 25%, #000);
+    //
+    background-image: url("../../../assets/images/banners/#{get-hero-bgcolor($image-id)}.png"),
+                      url("../../../assets/images/banners/#{get-hero-bgcolor($image-id)}.jpg");
+    background-attachment: local;
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0;
+    margin-top: 0 auto;
+    h1, p{
+        color: $base--color;
+        width: 87%;
+        margin: auto;
+    }
+    h1{
+        font: {
+            size: 4.5rem;
+            weight: 600;
+        }
+    }
+    p{
+        font: {
+            size: 1.75rem;
+            weight: 700;
+        }
+    }
+    a{
+        margin: 3rem 0 2rem 6.5%;
+        display: block;
+        @include link-button(18rem, 5rem, $image-id);
+        font-weight: 400;
+        font-size: 1.5rem;
+        text-align: center;
+        span{
+            display: inline-block;
+            padding-top: 1.5rem;
+        }
+    }
+}

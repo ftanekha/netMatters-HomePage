@@ -624,10 +624,10 @@ div#header-upper-container div#search-field-container span:hover {
     text-decoration: none;
     width: 10rem;
     height: 3.5rem;
-    background-color: #4183d7;
     color: #fff;
     border: 1px solid transparent;
     border-radius: 3px;
+    background-color: #4183d7;
   }
   div#header-upper-container div#optional-support-contact a:first-child:hover {
     background-color: #2c75d2;
@@ -636,10 +636,10 @@ div#header-upper-container div#search-field-container span:hover {
     text-decoration: none;
     width: 10rem;
     height: 3.5rem;
-    background-color: #999aa2;
     color: #fff;
     border: 1px solid transparent;
     border-radius: 3px;
+    background-color: #999aa2;
   }
   div#header-upper-container div#optional-support-contact a:last-child:hover {
     background-color: #8c8d96;
@@ -650,8 +650,6 @@ nav {
   background-color: #333645;
 }
 nav ul#header-lower-container {
-  width: 87%;
-  margin: auto;
   list-style-type: none;
   color: #fff;
   display: flex;
@@ -922,183 +920,309 @@ nav ul#header-lower-container li:nth-child(7) a div span:last-child {
   font-size: 1.2rem;
 }
 
-section#bootcamp-hero {
-  filter: invert(0);
-  filter: brightness(100%);
+section#hero div.why-choose-us {
   background: linear-gradient(270deg, transparent 25%, #000);
-  background-image: url(../../../assets/images/skills-bootcamp-heroe.jpg);
+  background-image: url("../../../assets/images/banners/why--choose--us.png"), url("../../../assets/images/banners/why--choose--us.jpg");
   background-attachment: local;
   background-size: cover;
   background-position: center;
   padding: 5rem 0;
   margin-top: 0 auto;
 }
-section#bootcamp-hero div#bootcamp-hero-container {
+section#hero div.why-choose-us h1, section#hero div.why-choose-us p {
+  color: #fff;
   width: 87%;
   margin: auto;
 }
-section#bootcamp-hero div#bootcamp-hero-container h1, section#bootcamp-hero div#bootcamp-hero-container p {
-  color: #fff;
-}
-section#bootcamp-hero div#bootcamp-hero-container h1 {
+section#hero div.why-choose-us h1 {
   font-size: 4.5rem;
   font-weight: 600;
 }
-section#bootcamp-hero div#bootcamp-hero-container p {
+section#hero div.why-choose-us p {
   font-size: 1.75rem;
   font-weight: 700;
 }
-@media only screen and (min-width: 1235px) {
-  section#bootcamp-hero div#bootcamp-hero-container p {
-    width: 60%;
-  }
-}
-section#bootcamp-hero div#bootcamp-hero-container a {
-  display: inline-block;
+section#hero div.why-choose-us a {
+  margin: 3rem 0 2rem 6.5%;
+  display: block;
   text-decoration: none;
-  width: 13rem;
-  height: 4.5rem;
-  background-color: #4183d7;
+  width: 18rem;
+  height: 5rem;
   color: #fff;
   border: 1px solid transparent;
   border-radius: 3px;
+  background-color: #926fb1;
   font-weight: 400;
   font-size: 1.5rem;
   text-align: center;
 }
-section#bootcamp-hero div#bootcamp-hero-container a:hover {
-  background-color: #2c75d2;
+section#hero div.why-choose-us a:hover {
+  background-color: #855ea8;
 }
-section#bootcamp-hero div#bootcamp-hero-container a span {
+section#hero div.why-choose-us a span {
   display: inline-block;
-  padding-top: 1.25rem;
+  padding-top: 1.5rem;
 }
-
-section#launch-a-career {
-  background-color: #fff;
-  padding: 2rem 0 4rem;
+section#hero div.bespoke--software {
+  background: linear-gradient(270deg, transparent 25%, #000);
+  background-image: url("../../../assets/images/banners/bespoke--software.png"), url("../../../assets/images/banners/bespoke--software.jpg");
+  background-attachment: local;
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0;
+  margin-top: 0 auto;
 }
-section#launch-a-career div#launch-a-career-section-container {
+section#hero div.bespoke--software h1, section#hero div.bespoke--software p {
+  color: #fff;
   width: 87%;
   margin: auto;
-  display: flex;
-  flex-direction: column;
 }
-section#launch-a-career div#launch-a-career-section-container div#no-experience-required {
-  display: flex;
-  flex-direction: column;
-  row-gap: 2rem;
-  padding: 3rem 0 5rem;
+section#hero div.bespoke--software h1 {
+  font-size: 4.5rem;
+  font-weight: 600;
 }
-@media screen and (min-width: 1020px) {
-  section#launch-a-career div#launch-a-career-section-container div#no-experience-required {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 4rem;
-  }
+section#hero div.bespoke--software p {
+  font-size: 1.75rem;
+  font-weight: 700;
 }
-section#launch-a-career div#launch-a-career-section-container div#no-experience-required div img {
-  max-width: 90%;
-  margin: auto;
-}
-section#launch-a-career div#launch-a-career-section-container h2 {
-  color: #4183d7;
-  font-size: 2.2rem;
-  font-weight: 400;
-}
-section#launch-a-career div#launch-a-career-section-container p {
-  font-size: 1.1rem;
-  color: #555;
-}
-section#launch-a-career div#launch-a-career-section-container footer div#gvt-funding-info-link a {
-  display: inline-block;
+section#hero div.bespoke--software a {
+  margin: 3rem 0 2rem 6.5%;
+  display: block;
   text-decoration: none;
-  width: 11rem;
-  height: 2.5rem;
-  background-color: #4183d7;
+  width: 18rem;
+  height: 5rem;
   color: #fff;
   border: 1px solid transparent;
   border-radius: 3px;
+  background-color: #67809f;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   text-align: center;
-  padding-top: 0.8rem;
-  margin-top: 1rem;
 }
-section#launch-a-career div#launch-a-career-section-container footer div#gvt-funding-info-link a:hover {
-  background-color: #2c75d2;
+section#hero div.bespoke--software a:hover {
+  background-color: #5c7391;
 }
-
-section#work-from-home {
-  background-color: #4183d7;
+section#hero div.bespoke--software a span {
+  display: inline-block;
+  padding-top: 1.5rem;
+}
+section#hero div.it--support {
+  background: linear-gradient(270deg, transparent 25%, #000);
+  background-image: url("../../../assets/images/banners/it--support.png"), url("../../../assets/images/banners/it--support.jpg");
+  background-attachment: local;
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0;
+  margin-top: 0 auto;
+}
+section#hero div.it--support h1, section#hero div.it--support p {
   color: #fff;
-  padding-top: 2rem;
-  padding-bottom: 3rem;
-}
-section#work-from-home div#work-from-home-container {
-  width: 87%;
-  margin: 0 auto;
-}
-section#work-from-home div#work-from-home-container h2 {
-  font-size: 2rem;
-  font-weight: 500;
-}
-section#work-from-home div#work-from-home-container div {
-  display: flex;
-  flex-direction: column;
-}
-@media screen and (min-width: 1020px) {
-  section#work-from-home div#work-from-home-container div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 4rem;
-  }
-}
-section#work-from-home div#work-from-home-container div p {
-  font-size: 1.1rem;
-}
-
-section#course-features {
-  padding: 2rem 0;
-  background-color: #fff;
-}
-section#course-features > div {
   width: 87%;
   margin: auto;
-  color: #555;
 }
-section#course-features > div h2, section#course-features > div h3 {
-  color: #4183d7;
-  font-weight: 500;
+section#hero div.it--support h1 {
+  font-size: 4.5rem;
+  font-weight: 600;
 }
-section#course-features > div h2 {
-  font-size: 2rem;
+section#hero div.it--support p {
+  font-size: 1.75rem;
+  font-weight: 700;
 }
-section#course-features > div h3 {
-  font-size: 1.7rem;
-  position: relative;
+section#hero div.it--support a {
+  margin: 3rem 0 2rem 6.5%;
+  display: block;
+  text-decoration: none;
+  width: 18rem;
+  height: 5rem;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background-color: #4183d7;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
 }
-section#course-features > div h3 span {
-  margin-right: 0.5rem;
-  position: relative;
-  top: 0.1rem;
+section#hero div.it--support a:hover {
+  background-color: #2c75d2;
 }
-section#course-features > div p {
-  font-size: 1.1rem;
+section#hero div.it--support a span {
+  display: inline-block;
+  padding-top: 1.5rem;
 }
-section#course-features > div:nth-child(2) {
-  display: flex;
-  flex-direction: column;
-  margin: 1rem auto;
+section#hero div.digital--marketing {
+  background: linear-gradient(270deg, transparent 25%, #000);
+  background-image: url("../../../assets/images/banners/digital--marketing.png"), url("../../../assets/images/banners/digital--marketing.jpg");
+  background-attachment: local;
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0;
+  margin-top: 0 auto;
 }
-@media screen and (min-width: 950px) {
-  section#course-features > div:nth-child(2) {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(350px, 1fr));
-    grid-template-rows: 1fr 1fr;
-    column-gap: 2rem;
-  }
+section#hero div.digital--marketing h1, section#hero div.digital--marketing p {
+  color: #fff;
+  width: 87%;
+  margin: auto;
+}
+section#hero div.digital--marketing h1 {
+  font-size: 4.5rem;
+  font-weight: 600;
+}
+section#hero div.digital--marketing p {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+section#hero div.digital--marketing a {
+  margin: 3rem 0 2rem 6.5%;
+  display: block;
+  text-decoration: none;
+  width: 18rem;
+  height: 5rem;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background-color: #2ecc71;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
+}
+section#hero div.digital--marketing a:hover {
+  background-color: #29b765;
+}
+section#hero div.digital--marketing a span {
+  display: inline-block;
+  padding-top: 1.5rem;
+}
+section#hero div.telecoms--services {
+  background: linear-gradient(270deg, transparent 25%, #000);
+  background-image: url("../../../assets/images/banners/telecoms--services.png"), url("../../../assets/images/banners/telecoms--services.jpg");
+  background-attachment: local;
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0;
+  margin-top: 0 auto;
+}
+section#hero div.telecoms--services h1, section#hero div.telecoms--services p {
+  color: #fff;
+  width: 87%;
+  margin: auto;
+}
+section#hero div.telecoms--services h1 {
+  font-size: 4.5rem;
+  font-weight: 600;
+}
+section#hero div.telecoms--services p {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+section#hero div.telecoms--services a {
+  margin: 3rem 0 2rem 6.5%;
+  display: block;
+  text-decoration: none;
+  width: 18rem;
+  height: 5rem;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background-color: #d64541;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
+}
+section#hero div.telecoms--services a:hover {
+  background-color: #d1312d;
+}
+section#hero div.telecoms--services a span {
+  display: inline-block;
+  padding-top: 1.5rem;
+}
+section#hero div.web--design {
+  background: linear-gradient(270deg, transparent 25%, #000);
+  background-image: url("../../../assets/images/banners/web--design.png"), url("../../../assets/images/banners/web--design.jpg");
+  background-attachment: local;
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0;
+  margin-top: 0 auto;
+}
+section#hero div.web--design h1, section#hero div.web--design p {
+  color: #fff;
+  width: 87%;
+  margin: auto;
+}
+section#hero div.web--design h1 {
+  font-size: 4.5rem;
+  font-weight: 600;
+}
+section#hero div.web--design p {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+section#hero div.web--design a {
+  margin: 3rem 0 2rem 6.5%;
+  display: block;
+  text-decoration: none;
+  width: 18rem;
+  height: 5rem;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background-color: #926fb1;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
+}
+section#hero div.web--design a:hover {
+  background-color: #855ea8;
+}
+section#hero div.web--design a span {
+  display: inline-block;
+  padding-top: 1.5rem;
+}
+section#hero div.cyber--security {
+  background: linear-gradient(270deg, transparent 25%, #000);
+  background-image: url("../../../assets/images/banners/cyber--security.png"), url("../../../assets/images/banners/cyber--security.jpg");
+  background-attachment: local;
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0;
+  margin-top: 0 auto;
+}
+section#hero div.cyber--security h1, section#hero div.cyber--security p {
+  color: #fff;
+  width: 87%;
+  margin: auto;
+}
+section#hero div.cyber--security h1 {
+  font-size: 4.5rem;
+  font-weight: 600;
+}
+section#hero div.cyber--security p {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+section#hero div.cyber--security a {
+  margin: 3rem 0 2rem 6.5%;
+  display: block;
+  text-decoration: none;
+  width: 18rem;
+  height: 5rem;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background-color: #f62459;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-align: center;
+}
+section#hero div.cyber--security a:hover {
+  background-color: #f50c46;
+}
+section#hero div.cyber--security a span {
+  display: inline-block;
+  padding-top: 1.5rem;
+}
+section#hero div.initially-hidden {
+  display: none;
 }
 
 section#graduates-review div {
@@ -1128,172 +1252,6 @@ section#graduates-review div cite {
   font-style: normal;
   font-size: 1.3rem;
   font-weight: 600;
-}
-
-section#scion-scheme-application {
-  background-color: #fff;
-}
-section#scion-scheme-application div#scion-scheme-application-container {
-  width: 87%;
-  margin: 0 auto;
-  padding: 4rem 0;
-  display: flex;
-  flex-direction: column;
-  row-gap: 2.5rem;
-}
-@media only screen and (min-width: 1235px) {
-  section#scion-scheme-application div#scion-scheme-application-container {
-    padding: 10% auto;
-    flex-direction: row;
-    justify-content: space-between;
-    column-gap: 3rem;
-  }
-  section#scion-scheme-application div#scion-scheme-application-container > div {
-    width: 50%;
-  }
-}
-section#scion-scheme-application div#scion-scheme-application-container div#course-application img {
-  max-width: 100%;
-  margin: 0;
-  border-radius: 3px;
-}
-section#scion-scheme-application div#scion-scheme-application-container div#course-application h3 {
-  color: #4183d7;
-  font-weight: 400;
-  font-size: 2rem;
-}
-section#scion-scheme-application div#scion-scheme-application-container div#course-application p {
-  padding: 0.5rem 0;
-  color: #555;
-  font-size: 1.1rem;
-}
-section#scion-scheme-application div#scion-scheme-application-container div#course-application p a {
-  text-decoration: none;
-  color: #4183d7;
-  font-weight: 600;
-}
-section#scion-scheme-application div#scion-scheme-application-container div#course-application a.btn-primary {
-  display: block;
-  text-decoration: none;
-  width: 15rem;
-  height: 5rem;
-  background-color: #4183d7;
-  color: #fff;
-  border: 1px solid transparent;
-  border-radius: 3px;
-  font-weight: 400;
-  font-size: 1.5rem;
-  padding: 1.25rem 1.5rem;
-}
-section#scion-scheme-application div#scion-scheme-application-container div#course-application a.btn-primary:hover {
-  background-color: #2c75d2;
-}
-section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry {
-  background-color: #e6e7e9;
-  border-radius: 10px;
-  padding: 2rem 0px;
-}
-section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry div#enquiry-form {
-  width: 87%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-}
-@media only screen and (min-width: 1235px) {
-  section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry div#enquiry-form div#enquiry-form-container {
-    display: grid;
-    grid-template-columns: auto;
-  }
-  section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry div#enquiry-form div#enquiry-form-container div.input:nth-child(1) {
-    grid-column: 1/span 2;
-    max-width: 100%;
-  }
-  section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry div#enquiry-form div#enquiry-form-container div.input:nth-child(2) {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    grid-column: 3/span 3;
-    max-width: 100%;
-  }
-  section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry div#enquiry-form div#enquiry-form-container div.input:nth-child(3) {
-    grid-column: 1/span 2;
-  }
-  section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry div#enquiry-form div#enquiry-form-container div.input:nth-child(4) {
-    grid-column: 1/span 4;
-  }
-}
-section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry div#enquiry-form div#enquiry-form-container div.enquiry-form {
-  margin-bottom: 1rem;
-}
-section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry div#enquiry-form div#enquiry-form-container div.enquiry-form label {
-  display: block;
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 0.4rem;
-}
-section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry div#enquiry-form div#enquiry-form-container div.enquiry-form label:after {
-  content: " *";
-  color: #d24d57;
-}
-section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry div#enquiry-form div#enquiry-form-container div.enquiry-form input {
-  border: none;
-  width: 95%;
-  height: 47px;
-  padding: 5px 15px;
-}
-section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry div#enquiry-form div#enquiry-form-container div.enquiry-form input:focus {
-  box-shadow: inset 0 0 5px #5bc0de;
-}
-section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry footer#bootcamp-enquiry-footer {
-  width: 87%;
-  margin: 1rem 0;
-}
-section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry footer#bootcamp-enquiry-footer div.signup-checkbox {
-  display: flex;
-  column-gap: 1.5rem;
-  position: relative;
-}
-section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry footer#bootcamp-enquiry-footer div.signup-checkbox span.icon-check {
-  display: inline-block;
-  width: 2rem;
-  height: 2rem;
-  font-size: 3rem;
-  font-weight: 100;
-  color: #ddd;
-}
-section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry footer#bootcamp-enquiry-footer p, section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry footer#bootcamp-enquiry-footer small {
-  font-weight: 600;
-  color: #333645;
-}
-section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry footer#bootcamp-enquiry-footer a:link {
-  text-decoration: underline;
-  color: #000;
-}
-section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry footer#bootcamp-enquiry-footer a:visited {
-  color: #000;
-}
-section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry footer#bootcamp-enquiry-footer div#enquiry-footer-info {
-  margin: 1rem auto;
-  display: flex;
-  justify-content: space-between;
-}
-section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry footer#bootcamp-enquiry-footer div#enquiry-footer-info [type=submit] {
-  text-decoration: none;
-  width: 10rem;
-  height: 3rem;
-  background-color: #333645;
-  color: #fff;
-  border: 1px solid transparent;
-  border-radius: 3px;
-  font-weight: 300;
-  font-size: 1.1rem;
-}
-section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry footer#bootcamp-enquiry-footer div#enquiry-footer-info [type=submit]:hover {
-  background-color: #282b36;
-}
-section#scion-scheme-application div#scion-scheme-application-container div#bootcamp-enquiry footer#bootcamp-enquiry-footer div#enquiry-footer-info span::before {
-  content: "*";
-  color: #d24d57;
 }
 
 section#signup {
@@ -1382,10 +1340,10 @@ section#signup div#subscribe [type=submit] {
   text-decoration: none;
   width: 10rem;
   height: 3rem;
-  background-color: #333645;
   color: #fff;
   border: 1px solid transparent;
   border-radius: 3px;
+  background-color: #333645;
   font-weight: 300;
   font-size: 1.1rem;
 }
@@ -1981,7 +1939,7 @@ section#footer-info div#footer-menu-container div.footer-menu ul li a:hover {
 :root {
   background-color: #323544;
   font-family: Poppins, sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   letter-spacing: 0.4px;
 }
 
@@ -1989,10 +1947,16 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  max-width: 100vw;
+}
+body header {
+  background-color: #333645;
 }
 body div#main-container {
-  margin: auto;
+  background-color: #333645;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
 }
 body div#main-container header {
   background-color: #fff;
