@@ -1,6 +1,6 @@
 section#our-services{
     //experimental, but seems close enough: couldn't find the actual bgcolor in devtools
-    background-color: darken($base--color, 3%);
+    background-color: $base--color;
     *{
         box-sizing: border-box;
         text-decoration: none;
@@ -17,34 +17,9 @@ section#our-services{
         div#top-services{
             padding: 0;
         }
+        //headline
         div.headline{
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            color: $bg--dark;
-            margin-bottom: -2rem;
-            h2{
-                font-size: 3.5rem;
-                font-weight: 600;
-            }
-            //anchor tag is hidden on small screens
-            a{
-                display: none;
-                &:link{
-                    text-decoration: none;
-                    *{
-                        color: $bg--dark;
-                        font-size: 2rem;
-                        font-weight: 600;
-                    }
-                }
-                //media query
-                @media only screen and (min-width: 950px){
-                    display: block;
-                }
-            }
+            @include headline;
         }
         div#our-services-container{
             width: 100%;
