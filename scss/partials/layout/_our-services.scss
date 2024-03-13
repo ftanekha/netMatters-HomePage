@@ -1,0 +1,90 @@
+section#our-services{
+    background-color: darken($base--color, 3%);
+    *{
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    div{
+        //divs are initially flex-column unless otherwise specified (e.g. .headline)
+        display: flex;
+        flex-direction: column;
+    }
+    div#our-services-main-container{
+        width: 87%;
+        margin: 0 auto;
+        padding: 0;
+        div#top-services{
+            padding: 0;
+        }
+        div.headline{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            color: $bg--dark;
+            font-size: 2.25rem;
+            margin-bottom: -2rem;
+            //anchor tag is hidden on small screens
+            a{
+                display: none;
+                &:link{
+                    text-decoration: none;
+                    *{
+                        color: $bg--dark;
+                        font-weight: 400;
+                    }
+                }
+                //media query
+                @media only screen and (min-width: 950px){
+                    display: block;
+                }
+            }
+        }
+        div#our-services-container{
+            width: 100%;
+            display: block;
+            div#top-services{
+                ul{
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    list-style-type: none;
+                    *{
+                        color: $bg--dark;
+                    }
+                    li:first-child{
+                        @include service($bespoke--software);
+                        &:hover{
+                            background-color: $bespoke--software;
+                        }
+                    }
+                    li:nth-child(2){
+                        @include service($it--support);
+                        &:hover{
+                            background-color: $it--support;
+                        }
+                    }
+                    li:last-child{
+                        @include service($digital--marketing);
+                        &:hover{
+                            background-color: $digital--marketing;
+                        }
+                    }
+                    //media query
+                    @media only screen and (min-width: 950px){
+                        display: flex;
+                        justify-content: space-between;
+                        column-gap: 2.5rem;
+                    }
+                }
+            }
+            div#bottom-services{
+            }
+        }
+    }
+}
+
+// repetive code:
+// display: flex;
+// flex-direction: column;
