@@ -1728,33 +1728,116 @@ section#our-services div#our-services-main-container div#our-services-container 
   }
 }
 
-section#graduates-review div {
+section#about-netmatters div#about-netmatters-main-container {
   width: 80%;
-  margin: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
   color: #fff;
+  font-size: 1.2rem;
 }
-section#graduates-review div h3 {
-  font-size: 2rem;
+@media only screen and (min-width: 950px) {
+  section#about-netmatters div#about-netmatters-main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 3rem;
+  }
+}
+section#about-netmatters div#about-netmatters-main-container h2 {
+  font-size: 3rem;
   font-weight: 600;
 }
-section#graduates-review div div {
-  margin: 0;
-  padding: 0;
+section#about-netmatters div#about-netmatters-main-container p {
+  font-weight: 400;
 }
-section#graduates-review div span.icon-star-full {
+section#about-netmatters div#about-netmatters-main-container big {
+  font-weight: 500;
+}
+section#about-netmatters div#about-netmatters-main-container footer.about-netmatters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+section#about-netmatters div#about-netmatters-main-container footer.about-netmatters a {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 2rem;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+section#about-netmatters div#about-netmatters-main-container div#welcome-to-netmatters article#welcome-to-netmatters-main {
+  line-height: 1.875rem;
+}
+section#about-netmatters div#about-netmatters-main-container div#welcome-to-netmatters article#welcome-to-netmatters-main big {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+section#about-netmatters div#about-netmatters-main-container div#welcome-to-netmatters article#welcome-to-netmatters-main p {
+  font-size: 1.4rem;
+  padding-top: 2rem;
+}
+section#about-netmatters div#about-netmatters-main-container div#welcome-to-netmatters footer a {
+  text-decoration: none;
+  width: 21rem;
+  height: 4.25rem;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background-color: #22242e;
+}
+section#about-netmatters div#about-netmatters-main-container div#welcome-to-netmatters footer a:hover {
+  background-color: #17181f;
+}
+section#about-netmatters div#about-netmatters-main-container div#client-review div#rating {
+  margin-bottom: 2rem;
+}
+section#about-netmatters div#about-netmatters-main-container div#client-review div#rating span.icon-star-full {
   color: orange;
   font-size: 4rem;
 }
-section#graduates-review div p {
+section#about-netmatters div#about-netmatters-main-container div#client-review big {
+  font-size: 1.75rem;
   font-style: italic;
-  font-size: 1.5rem;
-  font-weight: 600;
 }
-section#graduates-review div cite {
-  color: #999aa2;
-  font-style: normal;
-  font-size: 1.3rem;
+section#about-netmatters div#about-netmatters-main-container div#client-review p {
+  font-size: 1.4rem;
   font-weight: 600;
+  color: #a3a8ac;
+}
+section#about-netmatters div#about-netmatters-main-container div#client-review p a:link {
+  color: #fff;
+  text-decoration: none;
+  font-style: normal;
+}
+section#about-netmatters div#about-netmatters-main-container div#client-review footer {
+  padding-bottom: 5rem;
+}
+section#about-netmatters div#about-netmatters-main-container div#client-review footer a:first-child {
+  text-decoration: none;
+  width: 21rem;
+  height: 4.25rem;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background-color: #4183d7;
+}
+section#about-netmatters div#about-netmatters-main-container div#client-review footer a:first-child:hover {
+  background-color: #2c75d2;
+}
+section#about-netmatters div#about-netmatters-main-container div#client-review footer a:last-child {
+  text-decoration: none;
+  width: 21rem;
+  height: 4.25rem;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background-color: #2ecc71;
+}
+section#about-netmatters div#about-netmatters-main-container div#client-review footer a:last-child:hover {
+  background-color: #29b765;
 }
 
 section#signup {
