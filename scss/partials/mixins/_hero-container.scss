@@ -1,7 +1,7 @@
 @mixin hero-container($image-id: "why-choose-us"){
     background: linear-gradient(270deg, transparent 25%, #000);
-    background-image: url("../../../assets/images/banners/#{get-hero-bgcolor($image-id)}.png"),
-                      url("../../../assets/images/banners/#{get-hero-bgcolor($image-id)}.jpg");
+    background-image: url("../assets/images/banners/#{get-hero-bgcolor($image-id)}.png"),
+                      url("../assets/images/banners/#{get-hero-bgcolor($image-id)}.jpg");
     background-attachment: local;
     background-size: cover;
     background-position: center;

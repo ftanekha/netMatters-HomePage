@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @font-face {
   font-family: "icomoon";
-  src: url("../../assets/icon-fonts/bar-and-star/fonts/icomoon.eot?ue4k7a");
-  src: url("../../assets/icon-fonts/bar-and-star/fonts/icomoon.eot?ue4k7a#iefix") format("embedded-opentype"), url("../../assets/icon-fonts/bar-and-star/fonts/icomoon.ttf?ue4k7a") format("truetype"), url("../../assets/icon-fonts/bar-and-star/fonts/icomoon.woff?ue4k7a") format("woff"), url("../../assets/icon-fonts/bar-and-star/fonts/icomoon.svg?ue4k7a#icomoon") format("svg");
+  src: url("../assets/icon-fonts/bar-and-star/fonts/icomoon.eot?ue4k7a");
+  src: url("../assets/icon-fonts/bar-and-star/fonts/icomoon.eot?ue4k7a#iefix") format("embedded-opentype"), url("../assets/icon-fonts/bar-and-star/fonts/icomoon.ttf?ue4k7a") format("truetype"), url("../assets/icon-fonts/bar-and-star/fonts/icomoon.woff?ue4k7a") format("woff"), url("../assets/icon-fonts/bar-and-star/fonts/icomoon.svg?ue4k7a#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -31,8 +31,8 @@
 
 @font-face {
   font-family: "icomoon";
-  src: url("../../assets/icon-fonts/header/fonts/icomoon.eot?dpfmnu");
-  src: url("../../assets/icon-fonts/header/fonts/icomoon.eot?dpfmnu#iefix") format("embedded-opentype"), url("../../assets/icon-fonts/header/fonts/icomoon.ttf?dpfmnu") format("truetype"), url("../../assets/icon-fonts/header/fonts/icomoon.woff?dpfmnu") format("woff"), url("../../assets/icon-fonts/header/fonts/icomoon.svg?dpfmnu#icomoon") format("svg");
+  src: url("../assets/icon-fonts/header/fonts/icomoon.eot?dpfmnu");
+  src: url("../assets/icon-fonts/header/fonts/icomoon.eot?dpfmnu#iefix") format("embedded-opentype"), url("../assets/icon-fonts/header/fonts/icomoon.ttf?dpfmnu") format("truetype"), url("../assets/icon-fonts/header/fonts/icomoon.woff?dpfmnu") format("woff"), url("../assets/icon-fonts/header/fonts/icomoon.svg?dpfmnu#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -273,8 +273,8 @@
 
 @font-face {
   font-family: "icomoon";
-  src: url("../../assets/icon-fonts/menu/fonts/icomoon.eot?tc7q2y");
-  src: url("../../assets/icon-fonts/menu/fonts/icomoon.eot?tc7q2y#iefix") format("embedded-opentype"), url("../../assets/icon-fonts/menu/fonts/icomoon.ttf?tc7q2y") format("truetype"), url("../../assets/icon-fonts/menu/fonts/icomoon.woff?tc7q2y") format("woff"), url("../../assets/icon-fonts/menu/fonts/icomoon.svg?tc7q2y#icomoon") format("svg");
+  src: url("../assets/icon-fonts/menu/fonts/icomoon.eot?tc7q2y");
+  src: url("../assets/icon-fonts/menu/fonts/icomoon.eot?tc7q2y#iefix") format("embedded-opentype"), url("../assets/icon-fonts/menu/fonts/icomoon.ttf?tc7q2y") format("truetype"), url("../assets/icon-fonts/menu/fonts/icomoon.woff?tc7q2y") format("woff"), url("../assets/icon-fonts/menu/fonts/icomoon.svg?tc7q2y#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -299,8 +299,8 @@
 
 @font-face {
   font-family: "icomoon";
-  src: url("../../assets/icon-fonts/arrow-rt/fonts/icomoon.eot?z7w9gk");
-  src: url("../../assets/icon-fonts/arrow-rt/fonts/icomoon.eot?z7w9gk#iefix") format("embedded-opentype"), url("../../assets/icon-fonts/arrow-rt/fonts/icomoon.ttf?z7w9gk") format("truetype"), url("../../assets/icon-fonts/arrow-rt/fonts/icomoon.woff?z7w9gk") format("woff"), url("../../assets/icon-fonts/arrow-rt/fonts/icomoon.svg?z7w9gk#icomoon") format("svg");
+  src: url("../assets/icon-fonts/arrow-rt/fonts/icomoon.eot?z7w9gk");
+  src: url("../assets/icon-fonts/arrow-rt/fonts/icomoon.eot?z7w9gk#iefix") format("embedded-opentype"), url("../assets/icon-fonts/arrow-rt/fonts/icomoon.ttf?z7w9gk") format("truetype"), url("../assets/icon-fonts/arrow-rt/fonts/icomoon.woff?z7w9gk") format("woff"), url("../assets/icon-fonts/arrow-rt/fonts/icomoon.svg?z7w9gk#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -334,8 +334,8 @@
 
 @font-face {
   font-family: "icomoon";
-  src: url("../../assets/icon-fonts/course-features/fonts/icomoon.eot?fa13rq");
-  src: url("../../assets/icon-fonts/course-features/fonts/icomoon.eot?fa13rq#iefix") format("embedded-opentype"), url("../../assets/icon-fonts/course-features/fonts/icomoon.ttf?fa13rq") format("truetype"), url("../../assets/icon-fonts/course-features/fonts/icomoon.woff?fa13rq") format("woff"), url("../../assets/icon-fonts/course-features/fonts/icomoon.svg?fa13rq#icomoon") format("svg");
+  src: url("../assets/icon-fonts/course-features/fonts/icomoon.eot?fa13rq");
+  src: url("../assets/icon-fonts/course-features/fonts/icomoon.eot?fa13rq#iefix") format("embedded-opentype"), url("../assets/icon-fonts/course-features/fonts/icomoon.ttf?fa13rq") format("truetype"), url("../assets/icon-fonts/course-features/fonts/icomoon.woff?fa13rq") format("woff"), url("../assets/icon-fonts/course-features/fonts/icomoon.svg?fa13rq#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -393,8 +393,8 @@
 
 @font-face {
   font-family: "icomoon";
-  src: url("../../assets/icon-fonts/check/fonts/icomoon.eot?wqvdmn");
-  src: url("../../assets/icon-fonts/check/fonts/icomoon.eot?wqvdmn#iefix") format("embedded-opentype"), url("../../assets/icon-fonts/check/fonts/icomoon.ttf?wqvdmn") format("truetype"), url("../../assets/icon-fonts/check/fonts/icomoon.woff?wqvdmn") format("woff"), url("../../assets/icon-fonts/check/fonts/icomoon.svg?wqvdmn#icomoon") format("svg");
+  src: url("../assets/icon-fonts/check/fonts/icomoon.eot?wqvdmn");
+  src: url("../assets/icon-fonts/check/fonts/icomoon.eot?wqvdmn#iefix") format("embedded-opentype"), url("../assets/icon-fonts/check/fonts/icomoon.ttf?wqvdmn") format("truetype"), url("../assets/icon-fonts/check/fonts/icomoon.woff?wqvdmn") format("woff"), url("../assets/icon-fonts/check/fonts/icomoon.svg?wqvdmn#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -457,8 +457,8 @@
 
 @font-face {
   font-family: "icomoon";
-  src: url("../../assets/icon-fonts/linkedin2/fonts/icomoon.eot?dth3ib");
-  src: url("../../assets/icon-fonts/linkedin2/fonts/icomoon.eot?dth3ib#iefix") format("embedded-opentype"), url("../../assets/icon-fonts/linkedin2/fonts/icomoon.ttf?dth3ib") format("truetype"), url("../../assets/icon-fonts/linkedin2/fonts/icomoon.woff?dth3ib") format("woff"), url("../../assets/icon-fonts/linkedin2/fonts/icomoon.svg?dth3ib#icomoon") format("svg");
+  src: url("../assets/icon-fonts/linkedin2/fonts/icomoon.eot?dth3ib");
+  src: url("../assets/icon-fonts/linkedin2/fonts/icomoon.eot?dth3ib#iefix") format("embedded-opentype"), url("../assets/icon-fonts/linkedin2/fonts/icomoon.ttf?dth3ib") format("truetype"), url("../assets/icon-fonts/linkedin2/fonts/icomoon.woff?dth3ib") format("woff"), url("../assets/icon-fonts/linkedin2/fonts/icomoon.svg?dth3ib#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -933,7 +933,7 @@ nav ul#header-lower-container li:nth-child(7) a div span:last-child {
 
 section#hero div.why-choose-us {
   background: linear-gradient(270deg, transparent 25%, #000);
-  background-image: url("../../../assets/images/banners/why--choose--us.png"), url("../../../assets/images/banners/why--choose--us.jpg");
+  background-image: url("../assets/images/banners/why--choose--us.png"), url("../assets/images/banners/why--choose--us.jpg");
   background-attachment: local;
   background-size: cover;
   background-position: center;
@@ -1001,7 +1001,7 @@ section#hero div.why-choose-us a span {
 }
 section#hero div.bespoke--software {
   background: linear-gradient(270deg, transparent 25%, #000);
-  background-image: url("../../../assets/images/banners/bespoke--software.png"), url("../../../assets/images/banners/bespoke--software.jpg");
+  background-image: url("../assets/images/banners/bespoke--software.png"), url("../assets/images/banners/bespoke--software.jpg");
   background-attachment: local;
   background-size: cover;
   background-position: center;
@@ -1069,7 +1069,7 @@ section#hero div.bespoke--software a span {
 }
 section#hero div.it--support {
   background: linear-gradient(270deg, transparent 25%, #000);
-  background-image: url("../../../assets/images/banners/it--support.png"), url("../../../assets/images/banners/it--support.jpg");
+  background-image: url("../assets/images/banners/it--support.png"), url("../assets/images/banners/it--support.jpg");
   background-attachment: local;
   background-size: cover;
   background-position: center;
@@ -1137,7 +1137,7 @@ section#hero div.it--support a span {
 }
 section#hero div.digital--marketing {
   background: linear-gradient(270deg, transparent 25%, #000);
-  background-image: url("../../../assets/images/banners/digital--marketing.png"), url("../../../assets/images/banners/digital--marketing.jpg");
+  background-image: url("../assets/images/banners/digital--marketing.png"), url("../assets/images/banners/digital--marketing.jpg");
   background-attachment: local;
   background-size: cover;
   background-position: center;
@@ -1205,7 +1205,7 @@ section#hero div.digital--marketing a span {
 }
 section#hero div.telecoms--services {
   background: linear-gradient(270deg, transparent 25%, #000);
-  background-image: url("../../../assets/images/banners/telecoms--services.png"), url("../../../assets/images/banners/telecoms--services.jpg");
+  background-image: url("../assets/images/banners/telecoms--services.png"), url("../assets/images/banners/telecoms--services.jpg");
   background-attachment: local;
   background-size: cover;
   background-position: center;
@@ -1273,7 +1273,7 @@ section#hero div.telecoms--services a span {
 }
 section#hero div.web--design {
   background: linear-gradient(270deg, transparent 25%, #000);
-  background-image: url("../../../assets/images/banners/web--design.png"), url("../../../assets/images/banners/web--design.jpg");
+  background-image: url("../assets/images/banners/web--design.png"), url("../assets/images/banners/web--design.jpg");
   background-attachment: local;
   background-size: cover;
   background-position: center;
@@ -1341,7 +1341,7 @@ section#hero div.web--design a span {
 }
 section#hero div.cyber--security {
   background: linear-gradient(270deg, transparent 25%, #000);
-  background-image: url("../../../assets/images/banners/cyber--security.png"), url("../../../assets/images/banners/cyber--security.jpg");
+  background-image: url("../assets/images/banners/cyber--security.png"), url("../assets/images/banners/cyber--security.jpg");
   background-attachment: local;
   background-size: cover;
   background-position: center;
