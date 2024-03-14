@@ -1,7 +1,5 @@
 @mixin hero-container($image-id: "why-choose-us"){
-    //
     background: linear-gradient(270deg, transparent 25%, #000);
-    //
     background-image: url("../../../assets/images/banners/#{get-hero-bgcolor($image-id)}.png"),
                       url("../../../assets/images/banners/#{get-hero-bgcolor($image-id)}.jpg");
     background-attachment: local;
@@ -11,18 +9,36 @@
     margin-top: 0 auto;
     h1, p{
         color: $base--color;
-        width: 80%;
-        margin: auto;
+        max-width: 65%;
+        margin-left: 10%;
     }
     h1{
+        @media only screen and (max-width: 950px){
+            box-sizing: border-box;
+            max-width: 75vh;
+            margin: auto;
+            text-align: center;
+            font: {
+                size: 3rem;
+                weight: 600;
+            }
+        }
         font: {
             size: 4.5rem;
             weight: 600;
         }
     }
     p{
+        @media only screen and (max-width: 950px){
+            box-sizing: border-box;
+            width: 75vh;
+            margin: auto;
+            text-align: center;
+            size: 1rem;
+        }
+        max-width: 80%;
         font: {
-            size: 1.75rem;
+            size: 1.5rem;
             weight: 700;
         }
     }
@@ -33,6 +49,9 @@
         font-weight: 400;
         font-size: 1.5rem;
         text-align: center;
+        @media only screen and (max-width: 950px){
+            margin: 2.5rem auto;
+        }
         span{
             display: inline-block;
             padding-top: 1.5rem;

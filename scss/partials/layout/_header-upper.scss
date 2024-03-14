@@ -15,6 +15,10 @@ div#header-upper-container{
         img{
             max-width: 400px;
             max-height: 100px;
+            @media only screen and (max-width: 950px){
+                min-width: 70%;
+                max-height: 4rem;
+            }
         }
     }
     //optional-support-contact
@@ -43,16 +47,16 @@ div#header-upper-container{
             }
             //menu/ hamburger
             &:last-child{
-                //box-sizing: border-box;
+                box-sizing: border-box;
                 color: $base--color;
                 background-color: $bg--dark;
                 font-size: 2.5rem;
                 font-weight: 100;
                 text-align: center;
-                height: 3.5rem; 
-                min-width: 4rem;
+                height: 5rem; 
+                min-width: 5rem;
                 border-radius: 3px;
-                padding-top: .5rem;
+                padding-top: 1.25rem;
                 &:hover{
                     background-color: darken($bg--dark, 5%);
                 }
@@ -63,9 +67,8 @@ div#header-upper-container{
     div#search-field-container{
         width: 100%;
         position: relative;
-        height: 3.5rem;
+        height: 5rem;
         input{
-            //box-sizing: border-box;
             width: 100%;
             height: 100%;
             border: 2px solid rgba(0,0,0,.1);
@@ -80,7 +83,6 @@ div#header-upper-container{
         }
         span{
             display: block;
-            //box-sizing: border-box;
             width: 3rem;
             height: 100%;
             position: absolute;
@@ -98,7 +100,6 @@ div#header-upper-container{
     }
     //first break point
     @media only screen and (min-width: 950px){
-        // padding: -.5rem;
         flex-wrap: nowrap;
         align-items: center;
         column-gap: .75rem;
@@ -117,10 +118,12 @@ div#header-upper-container{
             }
             //search button
             span{
+                box-sizing: border-box;
                 background-color: $bg--sombre;
                 color: $base--color;
-                height: 3.5rem; 
-                width: 3.5rem;
+                height: 5rem; 
+                width: 5rem;
+                padding-top: 1.75rem;
             }
         }
     }
@@ -132,7 +135,6 @@ div#header-upper-container{
             column-gap: .75rem;
             font-size: 1.5rem;
             a{
-                //box-sizing: border-box;
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;
@@ -140,11 +142,11 @@ div#header-upper-container{
             }
             //support
             a:first-child{
-                @include link-button(10rem, 3.5rem, $bg--primary);
+                @include link-button(12rem, 5rem, $bg--primary);
             }
             //contact
             a:last-child{
-                @include link-button(10rem, 3.5rem, $bg--sombre);
+                @include link-button(12rem, 5rem, $bg--sombre);
             }
         }
     }
