@@ -23,8 +23,11 @@ section#signup{
                     width: 100%;
                     height: 47px;
                     padding: 5px 15px;
+                    color: #555;
                     &:focus{    
-                        box-shadow: inset 0 0 5px #5bc0de;
+                        outline: transparent solid;
+                        outline: 0;
+                        filter: drop-shadow(0 0 0.75rem rgba(3, 250, 250,.2))
                     }
                 }
             }

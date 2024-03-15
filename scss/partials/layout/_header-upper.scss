@@ -71,15 +71,20 @@ div#header-upper-container{
         input{
             width: 100%;
             height: 100%;
-            border: 2px solid rgba(0,0,0,.1);
+            border: .5px solid rgba(0,0,0,.1);
             outline: 1px solid hsla(0,0%,100%,.2);
             border-radius: 3px;
             padding: 1rem;
-            background: rgba(0, 0, 0, .1);
+            background-color: rgba(0, 0, 0, .1);
             color: lighten(#555, 100%);
             font-size: 1rem;
             font-weight: 500;
             letter-spacing: .025rem;
+            &:focus{    
+                outline: transparent solid;
+                outline: 0;
+                filter: drop-shadow(0 0 1rem rgba(3, 250, 250,.2))
+            }
         }
         span{
             display: block;
@@ -95,6 +100,12 @@ div#header-upper-container{
             border-radius: 0 3px 3px 0;
             &:hover{
                 background-color: lighten($bg--dark, 15%);
+            }
+        }
+        //first break point
+        @media only screen and (min-width: 950px){
+            input{
+                background-color: $base--color;
             }
         }
     }
