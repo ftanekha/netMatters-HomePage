@@ -1917,6 +1917,39 @@ section#our-services div#our-services-main-container div#our-services-container 
   }
 }
 
+section#our-client-partners-upper {
+  background-color: #fff;
+  padding: 2rem 0;
+}
+section#our-client-partners-upper div.our-client-partners-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  column-gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+@media only screen and (min-width: 576px) {
+  section#our-client-partners-upper div.our-client-partners-container {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+section#our-client-partners-upper div.our-client-partners-container img:not(.small-screen) {
+  display: none;
+}
+section#our-client-partners-upper div.our-client-partners-container img {
+  filter: sepia(100%);
+}
+section#our-client-partners-upper div.our-client-partners-container img:hover {
+  filter: sepia(0%);
+}
+@media only screen and (min-width: 576px) {
+  section#our-client-partners-upper div.our-client-partners-container img.med-screen {
+    display: block;
+  }
+}
+
 section#about-netmatters div#about-netmatters-main-container {
   width: 80%;
   margin: 0 auto;
@@ -2153,6 +2186,39 @@ section#latest-news div#latest-news-main-container div#latest-news div.latest-ne
 }
 section#latest-news div#latest-news-main-container div#latest-news div.latest-news div.news-item-body footer.latest-news-footer big {
   font-weight: 600;
+}
+
+section#our-client-partners-lower {
+  background-color: #fff;
+  padding: 2rem 0;
+}
+section#our-client-partners-lower div.our-client-partners-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  column-gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+@media only screen and (min-width: 576px) {
+  section#our-client-partners-lower div.our-client-partners-container {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+section#our-client-partners-lower div.our-client-partners-container img:not(.small-screen) {
+  display: none;
+}
+section#our-client-partners-lower div.our-client-partners-container img {
+  filter: sepia(100%);
+}
+section#our-client-partners-lower div.our-client-partners-container img:hover {
+  filter: sepia(0%);
+}
+@media only screen and (min-width: 576px) {
+  section#our-client-partners-lower div.our-client-partners-container img.med-screen {
+    display: block;
+  }
 }
 
 section#signup {

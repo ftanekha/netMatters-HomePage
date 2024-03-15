@@ -1,0 +1,28 @@
+@mixin our-client-partners{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    @media only screen and (min-width: 576px){
+        //increase the number of visible images/ client partner logos
+        grid-template-columns: repeat(7, 1fr);
+    }
+    //display only a few images on small screen devices
+    img:not(.small-screen){
+        display: none;
+    }
+    img{
+        filter: sepia(100%);
+        &:hover{
+            filter: sepia(0%);
+        }
+        @media only screen and (min-width: 576px){
+            &.med-screen{
+                display: block;
+            }
+        }
+    }
+}
