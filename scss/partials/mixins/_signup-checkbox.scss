@@ -1,0 +1,6 @@
+@mixin signup-checkbox{
+    width: $signup__checkbox--size;
+    height: $signup__checkbox--size;
+    border: $signup__checkbox--border;
+    border-radius: $border--base-radius;
+}

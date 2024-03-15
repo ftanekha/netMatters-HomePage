@@ -1,0 +1,38 @@
+nav{
+    background-color: $bg--dark;
+    // width: 80%;
+    // margin: auto;
+    ul#header-lower-container{
+        width: 80%;
+        margin: auto;
+        list-style-type: none;
+        color: $base--color;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 1260px){
+            display: none;
+        }
+        //nav-items
+        li:nth-child(1){
+            @include nav-item($bespoke--software);
+        }
+        li:nth-child(2){
+            @include nav-item($it--support);
+        }
+        li:nth-child(3){
+            @include nav-item($digital--marketing);
+        }
+        li:nth-child(4){
+            @include nav-item($telecoms--services);
+        }
+        li:nth-child(5){
+            @include nav-item($web--design);
+        }
+        li:nth-child(6){
+            @include nav-item($cyber--security);
+        }
+        li:nth-child(7){
+            @include nav-item($dev--course);
+        }
+    }
+}

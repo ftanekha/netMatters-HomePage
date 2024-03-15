@@ -1,0 +1,23 @@
+@mixin link-button(
+    $width: 6rem, $height: 3rem, $bg-color: $bg--primary, 
+    $color: $base--color, $border-rad: $border--base-radius
+){
+    text-decoration: none;
+    width: $width;
+    height: $height;
+    color: $color;
+    border: $border--base;
+    border-radius: $border-rad;
+    //$web--design and "why-choose-us" share the same theme
+    @if($bg-color == "why--choose--us"){
+        background-color: $web--design;
+        &:hover{
+            background-color: darken($web--design, 5%);
+        }
+    }@else{
+        background-color: $bg-color;
+        &:hover{
+            background-color: darken($bg-color, 5%);
+        }
+    }
+}

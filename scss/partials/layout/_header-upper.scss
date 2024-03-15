@@ -1,0 +1,153 @@
+div#header-upper-container{
+    background-color: $base--color;
+    padding: 1rem 0;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    //logo
+    div#logo-container{
+        padding: 1rem 0;
+        width: 70%;
+        flex-shrink: 1;
+        display: flex;
+        justify-content: flex-start;
+        img{
+            max-width: 400px;
+            max-height: 100px;
+            @media only screen and (max-width: 950px){
+                min-width: 70%;
+                max-height: 4rem;
+            }
+        }
+    }
+    //optional-support-contact
+    div#optional-support-contact{
+        display: none;
+    }
+    //contact phone & menu icon
+    div#contact{
+        width: 30%;
+        flex-shrink: 1;
+        padding: 1rem 0;
+        display: flex;
+        justify-content: flex-end;
+        column-gap: 1.5rem;
+        //icons
+        span{
+            //phone
+            &:first-child{
+                color: $bg--dark;
+                font-size: 2rem;
+                padding-top: .75rem;
+                //hide @950px
+                @media only screen and (min-width: 950px){
+                    display: none;
+                }
+            }
+            //menu/ hamburger
+            &:last-child{
+                box-sizing: border-box;
+                color: $base--color;
+                background-color: $bg--dark;
+                font-size: 2.5rem;
+                font-weight: 100;
+                text-align: center;
+                height: 5rem; 
+                min-width: 5rem;
+                border-radius: 3px;
+                padding-top: 1.25rem;
+                &:hover{
+                    background-color: darken($bg--dark, 5%);
+                }
+            }  
+        }
+    }
+    //search bar
+    div#search-field-container{
+        width: 100%;
+        position: relative;
+        height: 5rem;
+        input{
+            width: 100%;
+            height: 100%;
+            border: 2px solid rgba(0,0,0,.1);
+            outline: 1px solid hsla(0,0%,100%,.2);
+            border-radius: 3px;
+            padding: 1rem;
+            background: rgba(0, 0, 0, .1);
+            color: lighten(#555, 100%);
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: .025rem;
+        }
+        span{
+            display: block;
+            width: 3rem;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 1.5rem;
+            color: $bg--dark;
+            text-align: center;
+            padding-top: 1.2rem;
+            border-radius: 0 3px 3px 0;
+            &:hover{
+                background-color: lighten($bg--dark, 15%);
+            }
+        }
+    }
+    //first break point
+    @media only screen and (min-width: 950px){
+        flex-wrap: nowrap;
+        align-items: center;
+        column-gap: .75rem;
+        div#contact{
+            order: 1;
+            width: 7%;
+            span:last-child{
+                width: 100%;
+            }
+        }
+        div#search-field-container{
+            width: 33%;
+            //search field
+            input{
+                background-color: $base--color;
+            }
+            //search button
+            span{
+                box-sizing: border-box;
+                background-color: $bg--sombre;
+                color: $base--color;
+                height: 5rem; 
+                width: 5rem;
+                padding-top: 1.75rem;
+            }
+        }
+    }
+    //second breakpoint
+    @media only screen and (min-width: 1235px){
+        //optional-support-contact
+        div#optional-support-contact{
+            display: inline-flex;
+            column-gap: .75rem;
+            font-size: 1.5rem;
+            a{
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                padding: .5rem;
+            }
+            //support
+            a:first-child{
+                @include link-button(12rem, 5rem, $bg--primary);
+            }
+            //contact
+            a:last-child{
+                @include link-button(12rem, 5rem, $bg--sombre);
+            }
+        }
+    }
+}

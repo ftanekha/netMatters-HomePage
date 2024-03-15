@@ -1,0 +1,7 @@
+section#our-client-partners-upper{
+    background-color: $base--color;
+    padding: 2rem 0;
+    div.our-client-partners-container{
+        @include our-client-partners;
+    }
+}

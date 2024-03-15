@@ -1,0 +1,115 @@
+section#our-services{
+    //experimental, but seems close enough: couldn't find the actual bgcolor in devtools
+    background-color: $base--color;
+    *{
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    div{
+        //divs are initially flex-column unless otherwise specified (e.g. .headline)
+        display: flex;
+        flex-direction: column;
+    }
+    div#our-services-main-container{
+        width: 80%;
+        margin: 0 auto;
+        padding: 0;
+        div#top-services{
+            padding: 0;
+        }
+        //headline
+        div.headline{
+            @include headline;
+        }
+        div#our-services-container{
+            width: 100%;
+            display: block;
+            //top-services
+            div#top-services{
+                ul{
+                    width: 100%;
+                    margin: -2rem 0;
+                    padding: 0;
+                    list-style-type: none;
+                    *{
+                        color: $bg--dark;
+                    }
+                    li:first-child{
+                        @include service($bespoke--software);
+                        &:hover{
+                            background-color: $bespoke--software;
+                        }
+                    }
+                    li:nth-child(2){
+                        @include service($it--support);
+                        &:hover{
+                            background-color: $it--support;
+                        }
+                    }
+                    li:last-child{
+                        @include service($digital--marketing);
+                        &:hover{
+                            background-color: $digital--marketing;
+                        }
+                    }
+                    //media query
+                    @media only screen and (min-width: 950px){
+                        display: flex;
+                        justify-content: space-between;
+                        column-gap: 2.5rem;
+                        li{
+                            width: 31.5%;
+                        }
+                    }
+                }
+            }
+            //bottom services
+            div#bottom-services{
+                ul{
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    list-style-type: none;
+                    *{
+                        color: $bg--dark;
+                    }
+                    li:first-child{
+                        @include service($telecoms--services);
+                        &:hover{
+                            background-color: $telecoms--services;
+                        }
+                    }
+                    li:nth-child(2){
+                        @include service($web--design);
+                        &:hover{
+                            background-color: $web--design;
+                        }
+                    }
+                    li:nth-child(3){
+                        @include service($cyber--security);
+                        &:hover{
+                            background-color: $cyber--security;
+                        }
+                    }
+                    li:last-child{
+                        @include service($dev--course);
+                        &:hover{
+                            background-color: $dev--course;
+                        }
+                    }
+                    //media query
+                    @media only screen and (min-width: 950px){
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        grid-template-rows: 1fr 1fr;
+                        column-gap: 2.5rem;
+                    }
+                    @media only screen and (min-width: 1235px){
+                        grid-template-columns: repeat(4, 1fr);
+                        grid-template-rows: 1fr;
+                    }
+                }
+            }
+        }
+    }
+}

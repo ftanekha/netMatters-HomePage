@@ -1,24 +1,36 @@
 section{
+    //social media links
     &#footer-info{
         width: 80%;
-        margin: auto;
-        display: flex;
+        margin: 0 auto;
+        //keep the footer at the bottom
+        padding: .5rem 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        // justify-content: flex-start;
         color: $base--color;
         font-family: $base--fontface;
         font-weight: normal;
-        @media (max-width: 1020px){
-            flex-wrap: wrap;
-            justify-content: flex-start;
+        @media (min-width: 1200px){
+            grid-template-columns: 1fr 2fr;
+            column-gap: 4rem;
+            //rearrange operations links
+            div#footer-menu-container{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 4rem;
+            }
         }
 
+        //social media links
         figure{
             margin: 0;
         }
         h3{
             text-transform: uppercase;
+            font-weight: 300;
         };
 
-       //social media links
         div#social-links{
             display: flex;
             column-gap: .6rem;
@@ -28,37 +40,42 @@ section{
             position: relative;
             background-color: #212330;
             color: $base--color;
-            width: 20%;
-            height: 4rem;
+            width: 4.75rem;
+            height: 3.8rem;
             padding: 1.5rem auto;
             text: {
                 decoration: none;
                 align: center;
             }
             font: {
-                size: 2 * $base--fontsize;
+                size: 2 * 1rem;
             };
-            @include get-footer-icons-hover-bg(facebook);
-            @include get-footer-icons-hover-bg(linkedin);
-            @include get-footer-icons-hover-bg(twitter);
-            @include get-footer-icons-hover-bg(instagram);
+            @include footer-icons-hover-bg(facebook);
+            @include footer-icons-hover-bg(linkedin);
+            @include footer-icons-hover-bg(twitter);
+            @include footer-icons-hover-bg(instagram);
             span{
                 position: relative;
-                top: $base--fontsize;
+                top: .7rem;
             }
         };
 
-        //footer-menu
+        //footer-menu - about netmatters (operations and services)
         div#footer-menu-container{
-            // background-color: gray;
-            @media (min-width:1020px){
-                display: flex;
-                flex-grow: 1;
-                justify-content: space-around;
+            @media (min-width: 800px){
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    column-gap: 4rem;
             }
+            @media (min-width: 1400px){
+                display: grid;
+                grid-template-columns: repeat(4, minmax(150px, 1fr));
+                column-gap: 4rem;
+        }
             div.footer-menu{
                 h4{
-                    white-space: nowrap;
+                    // white-space: nowrap;
+                    font-weight: 300;
                 }
                 ul{
                     list-style-type: none;

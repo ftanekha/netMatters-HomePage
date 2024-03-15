@@ -1,0 +1,34 @@
+@mixin headline{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: $bg--dark;
+    margin-bottom: -2rem;
+    h2{
+        font-size: 3.5rem;
+        font-weight: 600;
+    }
+    //anchor tag is hidden on small screens
+    a{
+        display: none;
+        &:link, &:visited{
+            text-decoration: none;
+            *{
+                color: $bg--dark;
+                font-size: 2rem;
+                font-weight: 600;
+            }
+        }
+        &:hover{
+            text-decoration: underline;
+            text-decoration-thickness: .2rem;
+            text-decoration-color: $bg--dark;
+        }
+        //media query
+        @media only screen and (min-width: 950px){
+            display: block;
+        }
+    }
+}

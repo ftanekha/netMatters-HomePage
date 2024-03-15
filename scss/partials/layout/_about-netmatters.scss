@@ -1,0 +1,90 @@
+section#about-netmatters{
+    div#about-netmatters-main-container{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        color: $base--color;
+        font-size: 1.2rem;
+        @media only screen and (min-width: 950px){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 3rem;
+        }
+        h2{
+            font-size: 3rem;
+            font-weight: 600;
+        }
+        p{
+            font-weight: 400;
+        }
+        big{
+            font-weight: 500;
+        }
+        footer.about-netmatters{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            a{
+                box-sizing: border-box;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding-left: 2rem;
+                font-size: 1.5rem;
+                margin-top: 1.5rem;
+            }
+        }
+        div#welcome-to-netmatters{
+            article#welcome-to-netmatters-main{
+                line-height: 1.875rem;
+                big{
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                }
+                p{
+                    font-size: 1.4rem;
+                    padding-top: 2rem;
+                }
+            }
+            footer{
+                a{
+                    @include link-button(21rem, 4.25rem, darken($bg--dark, 8%), $border-rad: 6px);
+                }
+            }
+        }
+        div#client-review{
+            div#rating{
+                margin-bottom: 2rem;
+                span.icon-star-full{
+                    color: $review__star--bgcolor;
+                    font-size: 4rem;
+                }
+            }
+            big{
+                font-size: 1.75rem;
+                font-style: italic;
+            }
+            p{
+                font-size: 1.4rem;
+                font-weight: 600;
+                color: #a3a8ac;
+                a:link{
+                    color: $base--color;
+                    text-decoration: none;
+                    font-style: normal;
+                }
+            }
+            footer{
+                a:first-child{
+                    @include link-button(21rem, 4.25rem, $bg--primary, $border-rad: 6px);
+                }
+                a:last-child{
+                    @include link-button(21rem, 4.25rem, $digital--marketing, $border-rad: 6px);
+                }
+                padding-bottom: 5rem;
+            }
+        }
+    }           
+}
